@@ -1,18 +1,17 @@
 <template>
-  <div :type="htmlType" :class="classes">
-    Hello
+  <div :class="classes">
+    <slot></slot>
   </div>
 </template>
 
 <script>
 const prefixCls = 'rz-btn'
-
 export default {
   name: 'Button',
   props: {
     type: {
       type: String,
-      required: true,
+      required: false,
       default: 'gh'
     }
   },

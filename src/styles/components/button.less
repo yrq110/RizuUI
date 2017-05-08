@@ -1,46 +1,111 @@
 @btn-prefix: ~"@{css-prefix}btn";
 
 .@{btn-prefix} {
-    &-gh {
-      display: inline-block;
-      position: relative;
-      width: 100px; height: 25px;
-      padding: 5px 0;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.3s ease;
-      font-weight: bold;
-      overflow: hidden;
+  &-gh {
+    display: inline-block;
+    position: relative;
+    width: 100px; height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    overflow: hidden;
 
-      &:before {
-        content: '';
-        position: absolute;
-        right: 0;bottom: 0;left: 0;
-        border-bottom: black 2px solid;
-        transition: all 0.5s ease;
-        transform: translate(-101%,0px);
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        right: 0;top: 0;left: 0;
-        border-bottom: black 2px solid;
-        transition: all 0.5s ease;
-        transform: translate(101%,0px);
-      }
-
-      &:hover {
-        color: blue;
-      }
-
-      &:hover:before {
-        transform: translate(0px,0px);
-      }
-
-      &:hover:after {
-        transform: translate(0px,0px);
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;bottom: 0;left: 0;
+      border-bottom: black 2px solid;
+      transition: all 0.5s ease;
+      transform: translate(-101%,0px);
     }
 
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;top: 0;left: 0;
+      border-bottom: black 2px solid;
+      transition: all 0.5s ease;
+      transform: translate(101%,0px);
+    }
+
+    &:hover {
+      color: blue;
+    }
+
+    &:hover:before {
+      transform: translate(0px,0px);
+    }
+
+    &:hover:after {
+      transform: translate(0px,0px);
+    }
+  }
+
+  &-ts {
+    display: inline-block;
+    position: relative;
+    width: 100px; height: 40px;
+    border: 5px solid blue;
+    line-height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: bold;
+
+    &:before {
+      content: "Button";
+      position: absolute;
+      left: -100%;top:0%;
+      width: inherit;height: inherit;
+      background: blue;color: white;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    &:after {
+      content: "Button";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: inherit;height: inherit;
+      background: white;color: blue;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    &:hover:before {
+      left: 0;
+    }
+
+    &:hover:after {
+      left: 100%;
+    }
+  }
+
+  &-mg {
+    display:inline-block;
+    position:relative;
+    width: 100px;height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor:pointer;
+    color: white;
+    background-color: black;
+
+    &:before{
+      content:'';
+      position:absolute;
+      left: 0;bottom: 0;
+      width: 0;
+      height: 5px;
+      transition: width 0.5s;
+      background-color: white;
+    }
+
+    &:hover:before{
+      width: 30%;
+    }
+  }
 }
