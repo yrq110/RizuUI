@@ -2,13 +2,16 @@
   @import "./styles/index.less";
 </style>
 <style scoped>
-  li { list-style: none; }
+  li { list-style: none; display: inline-block;}
 </style>
 <template>
   <div id="app">
     <nav>
         <ul>
             <li><router-link to="/button">Button</router-link></li>
+            <li><router-link to="/card">Card</router-link></li>
+            <li><router-link to="/navigation">Navigation</router-link></li>
+            <li><router-link to="/carousel">Carousel</router-link></li>
         </ul>
     </nav>
     <router-view></router-view>

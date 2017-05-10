@@ -1,13 +1,10 @@
 @btn-prefix: ~"@{css-prefix}btn";
 
 .@{btn-prefix} {
+
   &-gh {
-    display: inline-block;
-    position: relative;
-    width: 100px; height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    text-align: center;
+    .btn;
+
     transition: all 0.3s ease;
     font-weight: bold;
     overflow: hidden;
@@ -44,13 +41,10 @@
   }
 
   &-ts {
-    display: inline-block;
-    position: relative;
-    width: 100px; height: 40px;
-    border: 5px solid blue;
-    line-height: 40px;
+    .btn;
+
     overflow: hidden;
-    cursor: pointer;
+    border: 5px solid blue;
     font-size: 120%;
     font-weight: bold;
 
@@ -84,13 +78,49 @@
     }
   }
 
+  &-ts-2 {
+    .btn;
+
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 15px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 50%;top: 100%;
+      transform: translateX(-50%);
+      width: 80%;height: 10%;
+      background: blue;
+      transition: all 0.3s ease;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 50%;top: 100%;
+      transform: translateX(-50%);
+      width: 80%;height: 10%;
+      background: blue;
+      transition: all 0.3s ease;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+
+    &:hover:after{
+      top: 0;
+      width: 100%;
+    }
+
+  }
+
   &-mg {
-    display:inline-block;
-    position:relative;
-    width: 100px;height: 40px;
-    line-height: 40px;
-    text-align: center;
-    cursor:pointer;
+    .btn;
+
     color: white;
     background-color: black;
 
@@ -106,6 +136,118 @@
 
     &:hover:before{
       width: 30%;
+    }
+  }
+
+  &-cp {
+      .btn;
+
+      font-weight: bold;
+      border: 4px solid black;
+      border-radius: 3px;
+      outline: none;
+      text-decoration: none;
+      overflow: hidden;
+
+      &:hover {
+        color: white;
+        background-color: black;
+        border-color: black;
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+
+      svg {
+        vertical-align: bottom;
+      }
+
+      &:hover svg polyline {
+        stroke: white;
+        fill: black;
+      }
+  }
+
+  &-ep {
+      position: relative;
+      left: 0;
+      display: inline-block;
+      width: 40px; height: 40px;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      border: 1px solid grey;
+      transition: all 0.3s ease;
+
+    & .plus {
+      position: relative;
+      display: inline-block;
+      width: 10px; height: 10px;
+    }
+
+    & .plus .bar {
+      position: absolute;
+      left: 0; top: 5px;
+      display: inline-block;
+      width: 10px;height: 1px;
+      background: black;
+    }
+
+    & .plus .bar:before {
+      content: '';
+      position: absolute;
+      left: 5px; top: -4px;
+      display: inline-block;
+      width: 1px;height: 5px;
+      background: black;
+      transition: all .3s ease;
+    }
+
+    & .plus .bar:after {
+      content: '';
+      position: absolute;
+      left: 5px; top: 0px;
+      display: inline-block;
+      width: 1px;height: 5px;
+      background: black;
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      width: auto;
+      height: 40px;
+      padding: 0 70px;
+      background: black;
+    }
+
+    &:hover .plus .bar{
+      background: white;
+    }
+
+    &:hover .plus .bar:before {
+      left: 9px;
+      transform: rotate(-45deg);
+      background: white;
+    }
+
+    &:hover .plus .bar:after {
+      left: 9px;
+      transform: rotate(45deg);
+      background: white;
+    }
+
+    & .btn-txt {
+      display: none;
+      opacity: 0;
+      color: white;
+      transition: all .3s ease;
+    }
+
+    &:hover .btn-txt {
+      display: inline;
+      opacity: 1;
     }
   }
 }
