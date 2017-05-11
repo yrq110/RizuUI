@@ -1,16 +1,16 @@
 <template>
   <div :class="classes">
 
-    <div v-if="mf">
+    <div v-if="type == 'mf'">
       <div class="card-image">
         <div class="img"></div>
       </div>
       <div class="card-content">
         <div class="title">
-          Lipsum
+          <slot name="card-title"></slot>
         </div>
         <div class="para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <slot name="card-content"></slot>
         </div>
       </div>
       <div class="card-button">
@@ -21,20 +21,35 @@
       </div>
     </div>
 
-    <div v-if="ko">
+    <div v-if="type == 'ko'">
       <div class="ko-content">
-        <span class="ko-category">#Category</span>
+        <span class="ko-category">
+          <slot name="card-category"></slot>
+        </span>
         <div class="ko-pic"></div>
         <div class="ko-contents">
-          <h3 class="contents-title">Lorem ipsum</h3>
+          <h3 class="contents-title">
+            <slot name="card-title"></slot>
+          </h3>
           <div class="contents-intro">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <slot name="card-content"></slot>
           </div>
-          <div style="margin-top: 20px">pic from Ask</div>
         </div>
       </div>
     </div>
 
+    <div v-if="type == 'gh'">
+      <div class="text">
+        <span class="txt1">H</span>
+        <span class="txt2">E</span>
+        <span class="txt3">L</span>
+        <span class="txt4">L</span>
+        <span class="txt5">O</span>
+        <span class="txt6">!</span>
+      </div>
+      <div class="pic-source">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,12 +67,6 @@ export default {
   computed: {
     classes () {
       return `${prefixCls}-${this.type}`
-    },
-    mf () {
-      if (this.type === 'mf') { return true } else { return false }
-    },
-    ko () {
-      if (this.type === 'ko') { return true } else { return false }
     }
   }
 }

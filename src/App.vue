@@ -12,6 +12,7 @@
             <li><router-link to="/card">Card</router-link></li>
             <li><router-link to="/navigation">Navigation</router-link></li>
             <li><router-link to="/carousel">Carousel</router-link></li>
+            <li><router-link to="/anima">Anima</router-link></li>
         </ul>
     </nav>
     <router-view></router-view>

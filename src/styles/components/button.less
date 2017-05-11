@@ -250,4 +250,37 @@
       opacity: 1;
     }
   }
+
+  &-gc {
+    .btn;
+
+    text-align: center;
+    text-transform: uppercase;
+    background: #30373f;
+    color: #f9d8ae;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition: all 0.3s ease;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;right: 0;bottom: 0;left: 0;
+      background: black;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: all .3s ease-out;
+    }
+
+    &:hover {
+      color: white;
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
+    }
+
+  }
 }

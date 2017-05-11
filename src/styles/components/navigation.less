@@ -1,0 +1,161 @@
+@nav-prefix: ~"@{css-prefix}nav";
+
+.@{nav-prefix} {
+  &-ct {
+
+    & nav {
+      text-align: center;
+      max-width: 100px;
+    }
+
+    & ul {
+      display:block;
+      position: relative;
+      list-style: none;
+      margin: 0;padding: 5px;
+      border: 5px solid;
+      border-width: 5px 5px 5px 0;
+    }
+
+    & li {
+      display: list-item;
+      position: relative;
+      font-weight: bold;
+    }
+
+    & a {
+      position: relative;
+      display: inline-block;
+      transition: 0.1s;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    & span {
+      position: relative;
+      display: block;
+      margin-top: -5px;
+      color: black;
+      transform: translateX(-100px);
+    }
+
+    & .span-in {
+      transform: translateX(0px);
+      transition: 0.3s transform;
+    }
+
+
+    & .span-out {
+      transform: translateX(-100px);
+      transition: 0.3s transform;
+    }
+
+    & a:hover {
+      transform: translateY(5px);
+      transition: 0.3s transform;
+    }
+
+    & a:not(:hover) {
+      transform: translateY(0px);
+      transition: 0.3s transform;
+    }
+  }
+
+  &-mu {
+
+    position: relative;
+    width: 100%;height: 100%;
+
+    & .main {
+      position: absolute;
+      top: 0;left: 50px;bottom: 0;right: 0;
+      transition: all 0.3s ease;
+      background-image: url("../../assets/dva.jpg");
+      background-size: cover;
+      color: white; font-weight: bold; padding-left: 10px;
+    }
+
+    & .nav {
+      display: inline-block;
+      position: absolute;
+      top: 0;left: 0;bottom: 0;
+      width: 50px;
+      background: rgb(195,176,169);
+      transition: all 0.3s ease;
+    }
+
+    & .nav:hover {
+      width: 150px;
+    }
+
+    & .nav:before {
+      content: 'catagory';
+      position: absolute;
+      vertical-align: baseline;
+      transform: rotate(90deg);
+      top: 50%;
+      color: white;
+    }
+
+    & .nav:hover:before {
+      opacity: 0;
+    }
+
+    & .nav nav {
+      height: 100%;
+      overflow-y: hidden;
+
+    }
+
+    & .nav nav::-webkit-scrollbar {
+      width:10px;
+      background: inherit;
+    }
+
+    & .nav nav::-webkit-scrollbar-thumb {
+      width: 10px;
+      height: 20px;
+      background: rgb(166,151,148);
+    }
+
+    & .nav:hover nav {
+      overflow-y: scroll;
+    }
+
+    & .nav nav .cate {
+      opacity: 0;
+      margin-left: 20%;
+      transform: translateX(-100%);
+      transition: all 0.5s ease;
+      color: white;
+    }
+
+    & .nav:hover nav .cate {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+
+    & ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    & a {
+      color: white;
+      padding-right: 5px;
+      text-decoration: none;
+      transition: all 0.1s ease-in;
+    }
+
+    & a:hover{
+      background: rgb(90,78,78);
+      padding-left: 10px;
+    }
+
+    & .blur {
+      filter: blur(3px);
+    }
+
+
+  }
+}
