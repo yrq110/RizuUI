@@ -1,0 +1,47 @@
+@hint-prefix: ~"@{css-prefix}hint";
+
+.@{hint-prefix} {
+  &-sof {
+    & .btn {
+      margin: 10px 0 0px 10px;
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+    }
+
+    & .btn:hover {
+      background-color: grey;
+    }
+
+    & .callout {
+      position: absolute;
+      padding: 10px 10px;
+      max-width: 400px;
+      margin: 0px 20px 0 10px;
+      background: black;
+      color: white;
+      font-size: 75%;
+    }
+
+    & .callout {
+      transform-origin: 0 0;
+      transition: 0.3s transform;
+      transition-delay: 1s;
+    }
+
+    & .btn:not(:hover) + .callout:not(:hover) {
+      transform: scale(0);
+      transition: 0.3s transform;
+    }
+
+    & .title {
+      font-weight: bold;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-style: solid;
+      border-width: 0 0 2px 0;
+      border-color: white;
+    }
+  }
+}

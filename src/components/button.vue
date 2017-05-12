@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <slot></slot>
+    <slot v-if="type != 'ep'">#btn</slot>
 
     <span v-if="type == 'cp'"></span>
     <svg v-if="type == 'cp'" fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
       </span>
     </i>
     <span v-if="type == 'ep'" class="btn-txt">
-      <slot name="ep-txt"></slot>
+      <slot name="ep-txt">ep-txt</slot>
     </span>
 
   </div>

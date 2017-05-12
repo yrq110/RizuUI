@@ -47,40 +47,10 @@
       </div>
       <div class="nav">
         <nav>
-          <div class="cate">
-            <h2>FRUIT</h2>
-            <ul>
-              <li><a href="#">apple</a></li>
-              <li><a href="#">banana</a></li>
-              <li><a href="#">orange</a></li>
-              <li><a href="#">peach</a></li>
-              <li><a href="#">lemon</a></li>
-              <li><a href="#">pear</a></li>
-              <li><a href="#">grape</a></li>
-            </ul>
-          </div>
-          <div class="cate">
-            <h2>FRUIT</h2>
-            <ul>
-              <li><a href="#">apple</a></li>
-              <li><a href="#">banana</a></li>
-              <li><a href="#">orange</a></li>
-              <li><a href="#">peach</a></li>
-              <li><a href="#">lemon</a></li>
-              <li><a href="#">pear</a></li>
-              <li><a href="#">grape</a></li>
-            </ul>
-          </div>
-          <div class="cate">
-            <h2>FRUIT</h2>
-            <ul>
-              <li><a href="#">apple</a></li>
-              <li><a href="#">banana</a></li>
-              <li><a href="#">orange</a></li>
-              <li><a href="#">peach</a></li>
-              <li><a href="#">lemon</a></li>
-              <li><a href="#">pear</a></li>
-              <li><a href="#">grape</a></li>
+          <div class="cate" v-for="item in items">
+            <h2>{{ item.title }}</h2>
+            <ul v-for="li in item.lists">
+              <li><a href="#">{{li}}</a></li>
             </ul>
           </div>
         </nav>
@@ -98,6 +68,19 @@ export default {
       type: String,
       required: false,
       default: 'ct'
+    },
+    items: {
+      type: Array,
+      default: function () {
+        return [
+          {
+            title: 'FRUIT',
+            lists: [
+              'apple', 'banana', 'orange', 'peach', 'lemon', 'pear'
+            ]
+          }
+        ]
+      }
     }
   },
   computed: {

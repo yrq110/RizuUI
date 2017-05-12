@@ -7,10 +7,10 @@
       </div>
       <div class="card-content">
         <div class="title">
-          <slot name="card-title"></slot>
+          <slot name="card-title">#title</slot>
         </div>
         <div class="para">
-          <slot name="card-content"></slot>
+          <slot name="card-content">#content</slot>
         </div>
       </div>
       <div class="card-button">
@@ -24,15 +24,15 @@
     <div v-if="type == 'ko'">
       <div class="ko-content">
         <span class="ko-category">
-          <slot name="card-category"></slot>
+          <slot name="card-category">#category</slot>
         </span>
         <div class="ko-pic"></div>
         <div class="ko-contents">
           <h3 class="contents-title">
-            <slot name="card-title"></slot>
+            <slot name="card-title">#title</slot>
           </h3>
           <div class="contents-intro">
-            <slot name="card-content"></slot>
+            <slot name="card-content">#content</slot>
           </div>
         </div>
       </div>
