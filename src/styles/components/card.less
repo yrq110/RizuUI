@@ -65,18 +65,18 @@
     width: 400px; height: 600px;
     background: red;
 
-    & .ko-content {
+    & .content {
       position: absolute;
       width: 100%; height: 100%;
       background: white;
       transition: all 0.5s ease;
     }
 
-    &:hover .ko-content {
+    &:hover .content {
       transform: translate(-10px,-10px);
     }
 
-    & .ko-content .ko-category {
+    & .content .category {
       display: inline-block;
       position: absolute;
       left: 10%; top: -2%;
@@ -87,7 +87,7 @@
       text-align: center;
     }
 
-    & .ko-content .ko-pic {
+    & .content .image {
       position: relative;
       width: 80%; height: 40%;
       background: green;
@@ -96,7 +96,7 @@
       background-size: cover;
     }
 
-    & .ko-contents {
+    & .contents {
       position: relative;
       width: 80%; height: 40%;
       margin: 10% 10% 0 10%;
@@ -210,5 +210,152 @@
       bottom: 5px;right: 5px;
       color: white;
     }
+  }
+
+  &-cc {
+
+    position: relative;
+    width: 400px; height: 600px;
+    background: white;
+
+    & .container {
+      position: relative;
+      height: 85%; width: 90%;
+      margin: 5% 5% 0;
+      box-shadow: 0 0 20px rgba(32,14,17,.15);
+    }
+
+    & .container .image{
+      position: relative;
+      height: 60%;
+    }
+
+    & .container .image .img {
+      position: relative;
+      height: 100%; width: 100%;
+      background: url('../../assets/dva.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    & .container .image .icon{
+      z-index: 3;
+      position: absolute;
+      top: 100%;left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      width: 70px; height: 70px;
+      border-radius: 35px;
+      background: #ff8c85;
+    }
+
+    & .container .content{
+      position: relative;
+      height: 40%;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    & .container .content h5 {
+      margin: 40px 0 0;
+      font-family: greycliff-bold;
+      font-weight: 400;
+      font-size: 200%;
+      letter-spacing: 2px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    & .container .content h5:after {
+      content: "";
+      width: 40px;
+      height: 1px;
+      background-color: #cdcdcd;
+      position: relative;
+      display: block;
+      margin: 1.125rem auto .875rem;
+    }
+
+    & .container .content p {
+      color: #b9b9b9;
+      // margin: 0;
+      line-height: 1.4;
+      font-size: 80%;
+    }
+
+    & .container .content .btn {
+      z-index: 2;
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translate(-50%,0);
+      width: 70%;height: 30%;
+      cursor: pointer;
+      background: #ff8c85;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      font-size: 80%;
+      letter-spacing: 3px;
+    }
+
+    & .container .content .btn:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;left: 0;right: 0;bottom: 0;
+      transition: all .3s ease;
+      box-shadow: 0 0 20px rgba(32,14,17,.3);
+    }
+
+    & .container .content .btn:after {
+      z-index: -2;
+      content: '';
+      position: absolute;
+      top: -10px;left: -10px;right: -10px;bottom: -10px;
+      background-image: linear-gradient(127deg,#ff79a2 -35%,#ff9f68 130%);
+    }
+
+    & .content .btn:hover:before {
+      top: -10px;left: -10px;right: -10px;bottom: -10px;
+    }
+
+    & .content .btn .icon {
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      width: 50%; height: 100%;
+      transition: all .3s ease;
+    }
+
+    & .content .btn .label {
+      position: absolute;
+      left: 50%;
+      display: inline-block;
+      width: 50%;height: 100%;
+      transition: all .3s ease;
+    }
+
+    & .content .btn .label:before {
+      content: "";
+      position: absolute;
+      top: 50%;left: 0;
+      width: 1px;
+      height: 80%;
+      background-color: hsla(0,0%,100%,.3);
+      transform: translateY(-50%);
+      transition: all .35s cubic-bezier(.8,0,.2,1);
+    }
+
+    & .content .btn .label .text{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+
+    & .btn:hover .icon {
+      transform: translateX(5%);
+    }
+
+    & .btn:hover .label {
+      transform: translateX(-5%);
+    }
+
   }
 }

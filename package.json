@@ -1,7 +1,7 @@
 {
   "name": "rizuui",
   "version": "1.0.0",
-  "description": "A cool UI components Library with Vue.js",
+  "description": "A cool UI Toolkit with Vue.js",
   "author": "yrq110",
   "private": true,
   "scripts": {

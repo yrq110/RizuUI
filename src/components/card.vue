@@ -1,7 +1,7 @@
 <template>
   <div :class="classes">
 
-    <div v-if="type == 'mf'">
+    <template v-if="type == 'mf'">
       <div class="card-image">
         <div class="img"></div>
       </div>
@@ -19,15 +19,15 @@
           <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)" />
         </svg>
       </div>
-    </div>
+    </template>
 
-    <div v-if="type == 'ko'">
-      <div class="ko-content">
-        <span class="ko-category">
+    <template v-if="type == 'ko'">
+      <div class="content">
+        <span class="category">
           <slot name="card-category">#category</slot>
         </span>
-        <div class="ko-pic"></div>
-        <div class="ko-contents">
+        <div class="image"></div>
+        <div class="contents">
           <h3 class="contents-title">
             <slot name="card-title">#title</slot>
           </h3>
@@ -36,9 +36,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </template>
 
-    <div v-if="type == 'gh'">
+    <template v-if="type == 'gh'">
       <div class="text">
         <span class="txt1">H</span>
         <span class="txt2">E</span>
@@ -49,7 +49,42 @@
       </div>
       <div class="pic-source">
       </div>
-    </div>
+    </template>
+
+    <template v-if="type == 'cc'">
+      <div class="container">
+        <div class="image">
+          <div class="img"></div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 60 60">
+              <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)" />
+              <line x1="30" y1="18" x2="30" y2="42" stroke-width="3" stroke="rgb(241,221,229)" />
+            </svg>
+          </div>
+        </div>
+        <div class="content">
+          <h5>
+            <slot name="card-title">#title</slot>
+          </h5>
+          <p>
+            <slot name="card-content">#content</slot>
+          </p>
+          <div class="btn">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <polyline points="30,18 42,30 30,42" stroke-width="3" stroke="rgb(241,221,229)" fill="#ff8c85"/>
+                <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)" />
+              </svg>
+            </span>
+            <span class="label">
+              <span class="text">
+                <slot name="card-btn">#btn</slot>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 

@@ -16,6 +16,13 @@
         </Card>
       </li>
       <li>
+        <Card type="cc">
+          <template slot="card-title">Lorem ipsum</template>
+          <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</template>
+          <template slot="card-btn">Lorem</template>
+        </Card>
+      </li>
+      <li>
         <Card type="gh">
         </Card>
       </li>
@@ -33,13 +40,19 @@ export default {
 </script>
 
 <style scoped>
+  body {
+    background: #f2f2f2;
+  }
   p {
     margin-left: 40px;
   }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
   li {
-    margin-top: 10px;
     list-style: none;
     display: inline-block;
-    margin: 10px;
+    margin: 30px;
   }
 </style>
