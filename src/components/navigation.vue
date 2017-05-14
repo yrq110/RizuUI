@@ -57,6 +57,61 @@
         </nav>
       </div>
     </template>
+
+    <template v-if="type == 'vc'">
+      <div class="vc-nav">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <div class="nav-menu">
+                <div class="menu-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40%" height="40%" viewBox="0 0 50 50">
+                    <line x1="0" y1="10" x2="50" y2="10" stroke-width="5" stroke="white" />
+                    <line x1="0" y1="25" x2="50" y2="25" stroke-width="5" stroke="white" f/>
+                    <line x1="0" y1="40" x2="50" y2="40" stroke-width="5" stroke="white" />
+                  </svg>
+                </div>
+                <div class="menu-title">
+                  MENU
+                </div>
+                <div class="menu-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50%" viewBox="0 0 100 50">
+                    <polyline class="arrow" points="-5,0 50,25 105,0" stroke-width="5" stroke="#4c2c31" fill="#4c2c31"/>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <template v-for="(item, index) in items">
+              <li>
+                <div class="nav-item">
+                  <div class="nav-index">
+                    {{ index + 1 }}
+                  </div>
+                  <div class="nav-title">
+                    {{ item.title }}
+                  </div>
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                      <polyline points="8,6 14,10 8,14" stroke-width="2" stroke="rgb(241,221,229)" />
+                    </svg>
+                  </i>
+                  <div class="bottom-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50%" viewBox="0 0 100 50">
+                      <polyline class="arrow" points="-5,0 50,25 105,0" stroke-width="5" stroke="#4c2c31" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="tooltip">
+                    {{ item.content }}
+                  </div>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </nav>
+        <div class="side">
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 

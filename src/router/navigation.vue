@@ -1,8 +1,9 @@
 <template>
   <div>
     <ul class="vertical">
-      <li><Nav type="ct"></Nav></li>
-      <li><Nav type="mu" :items="items"></Nav></li>
+      <li class="ct"><Nav type="ct"></Nav></li>
+      <li class="mu"><Nav type="mu" :items="items"></Nav></li>
+      <li class="vc"><Nav type="vc" :items="items_2"></Nav></li>
     </ul>
   </div>
 </template>
@@ -14,10 +15,42 @@ export default {
     return {
       items: [
         {
-          title: 'hello',
+          title: 'People',
           lists: [
             'yrq', 'yepoch', 'dixxxy', 'rizu'
           ]
+        },
+        {
+          title: 'Object',
+          lists: [
+            'Math', 'English', 'Physics', 'Chemistry'
+          ]
+        },
+        {
+          title: 'foo',
+          lists: [
+            'zhangsan', 'lisi', 'wangwu'
+          ]
+        },
+        {
+          title: '天干',
+          lists: [
+            '甲', '乙', '丙', '丁', '戊', '己', '辛', '壬', '癸'
+          ]
+        }
+      ],
+      items_2: [
+        {
+          title: 'LEARN',
+          content: 'Know naraken'
+        },
+        {
+          title: 'SEEN',
+          content: 'Scene in naraken'
+        },
+        {
+          title: 'TRY',
+          content: 'Reason for visit'
         }
       ]
     }
@@ -31,13 +64,24 @@ export default {
   div {
     margin: 0;
   }
-
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
   li {
     list-style: none;
     display: inline-block;
-    margin: 0;
-    width: 20%;
-    height: 300px;
+    margin: 0 5%;
+    width: 30%;
+    height: 500px;
     overflow: hidden;
+  }
+
+  .ct {
+    width: 10%;
+  }
+
+  .vc {
+    height:650px;
   }
 </style>
