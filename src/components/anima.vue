@@ -1,11 +1,11 @@
 <template>
   <div :class="classes">
-    <div v-if="type == 'loading'">
+    <template v-if="type == 'loading'">
       <div class="circle"></div>
       <div class="circle delay-1"></div>
       <div class="circle delay-2"></div>
       <div class="circle delay-3"></div>
-    </div>
+    </template>
   </div>
 </template>
 
