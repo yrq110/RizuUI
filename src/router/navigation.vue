@@ -1,6 +1,7 @@
 <template>
   <div>
     <ul class="vertical">
+      <li class="muu"><Nav type="muu"></Nav></li>
       <li class="ct"><Nav type="ct"></Nav></li>
       <li class="mu"><Nav type="mu" :items="items"></Nav></li>
       <li class="vc"><Nav type="vc" :items="items_2"></Nav></li>
@@ -61,27 +62,31 @@ export default {
 </script>
 
 <style scoped>
-  div {
-    margin: 0;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 5%;
-    width: 30%;
-    height: 500px;
-    overflow: hidden;
-  }
+div {
+  margin: 0;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5%;
+  width: 30%;
+  height: 500px;
+  overflow: hidden;
+}
 
-  .ct {
-    width: 10%;
-  }
+.muu {
+  width: 100%;
+  height: 120px;
+}
+.ct {
+  width: 10%;
+}
 
-  .vc {
-    height:650px;
-  }
+.vc {
+  height:650px;
+}
 </style>

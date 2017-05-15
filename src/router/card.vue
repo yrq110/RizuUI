@@ -27,9 +27,7 @@
         </Card>
       </li>
     </ul>
-
   </div>
-
 </template>
 
 <script>
@@ -40,19 +38,19 @@ export default {
 </script>
 
 <style scoped>
-  body {
-    background: #f2f2f2;
-  }
-  p {
-    margin-left: 40px;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  li {
-    list-style: none;
-    display: inline-block;
-    margin: 30px;
-  }
+body {
+  background: #f2f2f2;
+}
+p {
+  margin-left: 40px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 30px;
+}
 </style>

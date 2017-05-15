@@ -28,6 +28,8 @@ Current components:
 * [iView](https://github.com/iview/iview)
 * [vue-loading](https://github.com/jkchao/vue-loading)
 * [RadonUI](https://github.com/luojilab/radon-ui)
+* [iver](https://github.com/jlianphoto/iver)
+* [docsify](https://github.com/qingwei-li/docsify)
 
 ## License
 

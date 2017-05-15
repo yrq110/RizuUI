@@ -112,6 +112,61 @@
         </div>
       </div>
     </template>
+
+    <template v-if="type == 'nd'">
+      <div class="nodai-nav">
+        <div class="left-container"></div>
+        <div class="right-container">
+          <div class="nav-container">
+            <div class="nav-title">{{ navdata.title }}</div>
+            <div class="nav-subtitle">{{ navdata.subtitle }}</div>
+            <template v-for="element in navdata.elements">
+            <div class="nav-element">
+              <div class="element-cell">
+                <div class="element-title" :style="{background: element.color}">
+                  <div class="t">
+                    {{ element.title }}
+                  </div>
+                </div>
+                <div class="element-content">
+                  <div class="c">
+                    {{ element.content }}
+                  </div>
+                </div>
+              </div>
+              <div class="element-detail">
+                <section>
+                  <div class="detail-title" :style="{background: element.color}">
+                    <h4>{{ element.detail.title}}</h4>
+                  </div>
+                  <div class="detail-content">
+                    <template v-for="section in element.detail.sections">
+                      <section>
+                        <h5>{{ section.title }}</h5>
+                        <p>{{ section.content }}</p>
+                      </section>
+                    </template>
+                  </div>
+                </section>
+              </div>
+            </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template v-if="type === 'muu'">
+      <div class="mu-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Comment</a></li>
+        </ul>
+        <span class="des">This is a description</span>
+        <span class="bagger">bagger</span>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -136,6 +191,61 @@ export default {
             ]
           }
         ]
+      }
+    },
+    navdata: {
+      type: Object,
+      default: function () {
+        return {
+          title: 'Lorem ipsum',
+          subtitle: 'Lorem ipsum',
+          elements: [
+            {
+              title: 'Lorem',
+              content: 'Lorem ipsum dolor sit amet',
+              color: '#cf9287',
+              detail: {
+                title: 'Lorem',
+                sections: [
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  },
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  },
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  }
+                ]
+              }
+            },
+            {
+              title: 'Lorem',
+              content: 'Lorem ipsum dolor sit amet',
+              color: '#7d85b2',
+              detail: {
+                title: 'Lorem',
+                sections: [
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  },
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  },
+                  {
+                    title: 'Lorem',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     }
   },
@@ -171,7 +281,41 @@ export default {
         cate.onmouseleave = function () {
           main.className = 'main'
         }
-
+        break
+      case 'muu':
+        var pageTop = document.getElementsByClassName('page-top')[0]
+        var nav = document.getElementsByClassName('mu-nav')[0]
+        var num = nav.offsetTop
+        var des = document.getElementsByClassName('des')[0]
+        var bagger = document.getElementsByClassName('bagger')[0]
+        var timer = null
+        window.onscroll = function () {
+          var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+          if (scrollTop > num) {
+            nav.className = 'mu-nav fixed'
+            des.className = 'des none'
+            bagger.className = 'bagger display'
+            pageTop.className = 'page-top display'
+          } else {
+            nav.className = 'mu-nav top'
+            des.className = 'des display'
+            bagger.className = 'des none'
+            pageTop.className = 'page-top none'
+          }
+        }
+        pageTop.onclick = function () {
+          cancelAnimationFrame(timer)
+          timer = requestAnimationFrame(function fn () {
+            var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+            if (scrollTop > 0) {
+              window.scrollTo(0, scrollTop - 30)
+              timer = requestAnimationFrame(fn)
+            } else {
+              cancelAnimationFrame(timer)
+            }
+          })
+        }
+        break
     }
   }
 }

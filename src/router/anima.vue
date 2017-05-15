@@ -14,7 +14,4 @@ export default {
 </script>
 
 <style scoped>
-  /*li {
-    margin-top: 10px;
-  }*/
 </style>
