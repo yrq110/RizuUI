@@ -107,13 +107,12 @@
     display: block;
     position: relative;
     cursor: pointer;
-    width: 210px;height: 280px;
+    width: 240px;height: 360px;
     background: url("../../assets/dva.jpg") center center no-repeat;
-    background-size: contain;
+    background-size: cover;
     transition: all 0.3s ease;
     animation-delay: 1s;
     animation-fill-mode: both;
-
 
     &:before {
       position: absolute;
@@ -202,13 +201,6 @@
       50% {
         transform: translateY(-5px);
       }
-    }
-
-    .pic-source {
-      display: inline-block;
-      position: absolute;
-      bottom: 5px;right: 5px;
-      color: white;
     }
   }
 
@@ -357,5 +349,59 @@
       transform: translateX(-5%);
     }
 
+  }
+
+  &-gh-2 {
+
+    display: block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    width: 540px; height: 360px;
+
+    & img {
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    & .overlay {
+      position: absolute;
+      top:0;right:0;bottom:0;left:0;
+      text-align: center;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.3s ease;
+
+      background: #ff8c85 url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" \
+           width="100px" height="100px" \
+           fill-opacity=".15"> \
+        <rect x="50" width="50" height="50" /> \
+        <rect y="50" width="50" height="50" /> \
+        </svg>');
+      background-size: 30px 30px;
+    }
+
+    &:hover .overlay {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+
+    & .caption {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      transform: scale(1) translateY(-20%);
+      transition: all 0.3s ease;
+    }
+
+    &:hover .caption {
+      transform: scale(1.2) translateY(-50%);
+    }
   }
 }

@@ -26,6 +26,10 @@
         <Card type="gh">
         </Card>
       </li>
+      <li class="gh-2">
+        <Card type="gh-2">
+        </Card>
+      </li>
     </ul>
   </div>
 </template>
@@ -52,5 +56,8 @@ li {
   list-style: none;
   display: inline-block;
   margin: 30px;
+}
+li.gh-2 {
+  height: 100px;
 }
 </style>

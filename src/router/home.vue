@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <svg class="logo" width="100%" height="448" viewBox="0 0 1024 448">
+      <svg class="logo" width="100%" height="100%" viewBox="0 0 1024 448">
         <g class="text-fills" transform="translate(200.000000, 150.000000)" fill="#00BFFF">
   <!-- word R -->        <path d="M0,0 L80,0 L80,20 L100,20 L100,60 L80,60 L80,20 L20,20 L20,60 L80,60 L80,80 L60,80 L60,100 L80,100 L80,120 L100,120 L100,140 L80,140 L80,120 L60,120 L60,100 L40,100 L40,80 L20,80 L20,140 L0,140 L0,0 Z" id="R"></path>
   <!-- word I -->         <path d="M200,0 L200,140 L220,140 L220,0 L200,0 Z" id="I"></path>
@@ -123,5 +123,4 @@ section {
 .diag-right {
   transform-origin: 100% 0%;
 }
-
 </style>

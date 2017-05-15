@@ -1,6 +1,5 @@
 <template>
   <div :class="classes">
-
     <template v-if="type == 'mf'">
       <div class="card-image">
         <div class="img"></div>
@@ -85,6 +84,13 @@
         </div>
       </div>
     </template>
+
+    <template v-if="type == 'gh-2'">
+      <img :src='img2' alt="">
+      <div class="overlay">
+        <div class="caption">Hello world</div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -95,8 +101,15 @@ export default {
   props: {
     type: {
       type: String,
-      required: false,
       default: 'mf'
+    },
+    img: {
+      type: String,
+      default: 'http://opctl018t.bkt.clouddn.com/dva.jpg'
+    },
+    img2: {
+      type: String,
+      default: 'http://opctl018t.bkt.clouddn.com/hori.jpg'
     }
   },
   computed: {
