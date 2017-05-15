@@ -6,6 +6,7 @@ import Card from './card'
 import Nav from './navigation'
 import Anima from './anima'
 import Hint from './hint'
+import Scroller from './scroller'
 
 Vue.use(Router)
 
@@ -34,6 +35,10 @@ export default new Router({
     {
       path: '/hint',
       component: Hint
+    },
+    {
+      path: '/scroller',
+      component: Scroller
     }
   ]
 })

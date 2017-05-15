@@ -15,6 +15,7 @@
         <li><router-link to="/carousel">Carousel</router-link></li>
         <li><router-link to="/anima">Anima</router-link></li>
         <li><router-link to="/hint">Hint</router-link></li>
+        <li><router-link to="/scroller">Scroller</router-link></li>
       </ul>
     </nav>
     <router-view></router-view>

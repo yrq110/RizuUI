@@ -1,0 +1,116 @@
+@scroller-prefix: ~"@{css-prefix}srl";
+
+.@{scroller-prefix} {
+  &-ntd {
+
+    .scroller-wrap {
+      width: 100%;
+      overflow-y: hidden;overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+    .scroller-wrap::-webkit-scrollbar {
+      width: 0px;height: 0px;
+    }
+
+    .scroller-item {
+      display: inline-block;
+      width: 400px;
+      /*height: 400px;*/
+      margin: 10px 10px 30px 10px;
+      background: white;
+      cursor: pointer;
+    }
+
+    .item-thumb {
+      width: inherit;height: 200px;
+      background: url("../../assets/dva.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .item-label {
+      margin: 3px 0;
+      padding: 3px 0 3px 3px;
+      background: green;
+      color: white;
+      vertical-align: middle;
+    }
+
+    .item-title {
+      font-size: 120%;
+      font-weight: bold;
+      padding-bottom: 50px;
+      padding-top: 20px;
+    }
+
+    .item-sub {
+      color: grey;
+      font-weight: bold;
+    }
+
+    .scroller-item:hover .item-thumb {
+      filter: opacity(0.8);
+    }
+
+    .scroller-item:hover .item-title {
+      color: red;
+    }
+
+    .nin-pager {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pager-bar {
+      cursor: move;
+      margin: 0 20px;
+      position: relative;
+      top: 20px;
+    }
+
+    .bar-slide {
+      position: absolute;
+      height: 10px; width: 30px;
+      background: orange;
+    }
+
+    .bar-switch {
+      position: relative;
+      top: 15px; left: -15px;
+      height: 25px; width: 60px;
+      background: orange;
+      text-align: center;
+    }
+
+    .bar-switch:before {
+      content: "";
+      display: block;
+      position: relative;
+      top: -10%;left: 50%;
+      width: 10px; height: 10px;
+      background: orange;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .bar-sections {
+      height: 10px; width: 300px;
+      background: grey;
+    }
+
+    .switch-text {
+      position: relative;
+      top: -80%;
+      color: white;
+      font-size: 80%;
+    }
+
+    .pager-btn {
+      /*display: block;*/
+      cursor: pointer;
+    }
+
+    .pager-prev:hover svg {
+      stroke: white;
+    }
+  }
+}
