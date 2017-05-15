@@ -43,7 +43,7 @@
 </template>
 
 <script>
-const prefixCls = 'rz-srl'
+const prefixCls = 'rz-scroller'
 
 export default {
   name: 'Scroller',
