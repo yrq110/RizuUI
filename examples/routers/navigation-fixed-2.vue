@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import Nav from '../components/navigation'
+// import Nav from '../components/navigation'
 export default {
-  data () {
-    return {
-    }
-  },
-  components: { Nav }
+  // data () {
+  //   return {
+  //   }
+  // },
+  // components: { Nav }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <style lang="less">
-  @import "./styles/index.less";
+  @import "../src/styles/index.less";
 </style>
 <style scoped>
   li { list-style: none; display: inline-block;}

@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Hint from '../components/hint'
+// import Hint from '../components/hint'
 export default {
-  components: { Hint }
+  // components: { Hint }
 }
 </script>
 

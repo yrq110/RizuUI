@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import Scroller from '../components/scroller'
+// import Scroller from '../components/scroller'
 export default {
-  components: { Scroller }
+  // components: { Scroller }
 }
 </script>
 

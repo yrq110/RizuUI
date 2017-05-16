@@ -1,6 +1,6 @@
 {
-  "name": "rizuui",
-  "version": "1.0.0",
+  "name": "rizu-ui",
+  "version": "0.1.1",
   "description": "A cool UI Toolkit with Vue.js",
   "author": "yrq110",
   "private": true,

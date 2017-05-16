@@ -1,5 +1,7 @@
 @card-prefix: ~"@{css-prefix}card";
 
+
+
 .@{card-prefix} {
 
   &-mf {
@@ -15,7 +17,7 @@
 
     & .card-image .img {
       width: 300px;height: 400px;
-      background-image: url("../../assets/dva.jpg");
+      background-image: url(@sample-img);
       background-size: cover;
       background-repeat: no-repeat;
       transition: all 0.3s ease;
@@ -92,7 +94,7 @@
       width: 80%; height: 40%;
       background: green;
       margin: 10% 10% 0 10%;
-      background: url("../../assets/dva.jpg") center center no-repeat;
+      background: url(@sample-img ) center center no-repeat;
       background-size: cover;
     }
 
@@ -108,7 +110,7 @@
     position: relative;
     cursor: pointer;
     width: 240px;height: 360px;
-    background: url("../../assets/dva.jpg") center center no-repeat;
+    background: url(@sample-img ) center center no-repeat;
     background-size: cover;
     transition: all 0.3s ease;
     animation-delay: 1s;
@@ -225,7 +227,7 @@
     & .container .image .img {
       position: relative;
       height: 100%; width: 100%;
-      background: url('../../assets/dva.jpg') center center no-repeat;
+      background: url(@sample-img ) center center no-repeat;
       background-size: cover;
     }
     & .container .image .icon{

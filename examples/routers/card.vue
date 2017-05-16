@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import Card from '../components/card'
+// import Card from '../components/card'
 export default {
-  components: { Card }
+  // components: { Card }
 }
 </script>
 
