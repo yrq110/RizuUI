@@ -23,11 +23,8 @@ const install = function (Vue, opts = {}) {
   })
 }
 
-// auto install
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
 export default Object.assign(rizu, {install})
-
-// module.exports = rizuui  // eslint-disable-line no-undef

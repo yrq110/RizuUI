@@ -11,9 +11,6 @@ module.exports = {
   entry: {
     app: './examples/main.js'
   },
-  // entry: {
-  //   app: './examples/main.js',
-  // },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -63,6 +60,7 @@ module.exports = {
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          // name: utils.assetsPath('img/[name].[ext]')
         }
       },
       {

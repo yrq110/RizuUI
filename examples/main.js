@@ -1,12 +1,8 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './app'
-// import router from './routers'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import RizuUI from '../src/index'
-
 Vue.use(VueRouter)
 Vue.use(RizuUI)
 
@@ -53,11 +49,8 @@ const router = new VueRouter({
   ]
 })
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router: router,
-  // template: '<App/>',
-  // components: { App }
   render: h => h(App)
 })
