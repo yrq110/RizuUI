@@ -1,5 +1,7 @@
 # RizuUI
 
+<center>![](assets/logo.png)</center>
+
 ### A cool UI Toolkit with Vue.js
 
 working...
