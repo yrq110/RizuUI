@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://rizu-ui.github.io" target="\_blank">
-    <img src="https://github.com/yrq110/RizuUI/blob/master/assets/logo.png" width="700px">
+    <img src="https://github.com/yrq110/RizuUI/blob/master/assets/logo.png" width="128px">
   </a>
 </p>
 
