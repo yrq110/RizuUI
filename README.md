@@ -4,7 +4,9 @@
 
 working...
 
-## Overview
+## Doc
+
+[中文文档](rizu-ui.github.io)
 
 ## Features
 * npm + webpack + vue2
@@ -19,11 +21,32 @@ Current components:
 * animate(1)
 
 ## Install
-
+```bash
+npm install rizu-ui --save
+```
+or
+```html
+<link rel="stylesheet" type="text/css" href="//unpkg.com/dist/styles/rizuui.css">
+<script type="text/javascript" src="//unpkg.com/rizu-ui/dist/rizuui.min.js"></script>
+```
 ## Usage
+`main.js`
+```js
+import { RizuUI } from 'rizu-ui';
+import 'rizu-ui/dist/styles/rizuui.css'
 
-## Browser Support
-
+Vue.use(RizuUI);
+```
+`demo.vue`
+```html
+<template>
+    <Button type='gh'></Button>
+</template>
+<script>
+  export default {
+  }
+</script>
+```
 ## Thanks
 * [iView](https://github.com/iview/iview)
 * [vue-loading](https://github.com/jkchao/vue-loading)
