@@ -12,7 +12,7 @@ working...
 
 ## Doc
 
-[中文文档](rizu-ui.github.io)
+[中文文档](https://rizu-ui.github.io)
 
 ## Features
 * npm + webpack + vue2
