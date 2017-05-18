@@ -17,6 +17,7 @@
     & .card-image .img {
       width: 300px;height: 400px;
       background-image: url(@sample-img);
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       transition: all 0.3s ease;
@@ -106,17 +107,21 @@
   }
 
   &-gh {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    width: 240px;height: 360px;
-    background: url(@sample-img) center center no-repeat;
-    background-size: cover;
-    transition: all 0.3s ease;
-    animation-delay: 1s;
-    animation-fill-mode: both;
+    & .content {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 240px;height: 360px;
+      background-image: url(@sample-img);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: all 0.3s ease;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+    }
 
-    &:before {
+    & .content:before {
       position: absolute;
       top: 2px;
       left: 2px;
@@ -128,7 +133,7 @@
       transition: all 0.3s ease;
     }
 
-    &:after {
+    & .content:after {
       position: absolute;
       top: 70%;
       left: 70%;
@@ -140,25 +145,25 @@
       transition: all 0.5s ease;
     }
 
-    &:hover {
+    & .content:hover {
       transform: translateY(-5px);
     }
 
-    &:hover:before {
+    & .content:hover:before {
       right: 2px;
       bottom: 2px;
       border-top: white 1px solid;
       border-left: white 1px solid;
     }
 
-    &:hover:after {
+    & .content:hover:after {
       top: 2px;
       left: 2px;
       border-bottom: white 1px solid;
       border-right: white 1px solid;
     }
 
-    & .text {
+    & .content .text {
       position: absolute;
       top: -20px;right: 0;left: 0;
       text-align: center;
@@ -166,32 +171,32 @@
       letter-spacing: 3px;
     }
 
-    & .text span {
+    & .content .text span {
       display: inline-block;
       transition: all .3s ease;
     }
 
-    &:hover .text span.txt1 {
+    & .content:hover .text span.txt1 {
       animation: up-down .5s .05s;
     }
 
-    &:hover .text span.txt2 {
+    & .content:hover .text span.txt2 {
       animation: up-down .5s .15s;
     }
 
-    &:hover .text span.txt3 {
+    & .content:hover .text span.txt3 {
       animation: up-down .5s .25s;
     }
 
-    &:hover .text span.txt4 {
+    & .content:hover .text span.txt4 {
       animation: up-down .5s .35s;
     }
 
-    &:hover .text span.txt5 {
+    & .content:hover .text span.txt5 {
       animation: up-down .5s .45s;
     }
 
-    &:hover .text span.txt6 {
+    & .content:hover .text span.txt6 {
       animation: up-down .5s .55s;
     }
 

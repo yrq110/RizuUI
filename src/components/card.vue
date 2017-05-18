@@ -2,7 +2,7 @@
   <div :class="classes">
     <template v-if="type == 'mf'">
       <div class="card-image">
-        <div class="img"></div>
+        <div class="img" :style="{backgroundImage: 'url('+ img + ')'}"></div>
       </div>
       <div class="card-content">
         <div class="title">
@@ -25,7 +25,7 @@
         <span class="category">
           <slot name="card-category">#category</slot>
         </span>
-        <div class="image"></div>
+        <div class="image" :style="{backgroundImage: 'url('+ img + ')'}"></div>
         <div class="contents">
           <h3 class="contents-title">
             <slot name="card-title">#title</slot>
@@ -38,22 +38,22 @@
     </template>
 
     <template v-if="type == 'gh'">
-      <div class="text">
-        <span class="txt1">H</span>
-        <span class="txt2">E</span>
-        <span class="txt3">L</span>
-        <span class="txt4">L</span>
-        <span class="txt5">O</span>
-        <span class="txt6">!</span>
-      </div>
-      <div class="pic-source">
+      <div class="content" :style="{backgroundImage: 'url('+ img + ')'}">
+        <div class="text">
+          <span class="txt1">H</span>
+          <span class="txt2">E</span>
+          <span class="txt3">L</span>
+          <span class="txt4">L</span>
+          <span class="txt5">O</span>
+          <span class="txt6">!</span>
+        </div>
       </div>
     </template>
 
     <template v-if="type == 'cc'">
       <div class="container">
         <div class="image">
-          <div class="img"></div>
+          <div class="img" :style="{backgroundImage: 'url('+ img + ')'}"></div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 60 60">
               <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)" />
