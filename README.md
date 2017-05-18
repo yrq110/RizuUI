@@ -18,8 +18,7 @@ working...
 * npm + webpack + vue2
 * es2015 + less
 
-## Programming
-Current components:
+## Components
 * button(7)
 * card(4)
 * navigation(2)

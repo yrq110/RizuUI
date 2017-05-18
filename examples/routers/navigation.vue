@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// import Nav from '../components/navigation'
 export default {
   data () {
     return {

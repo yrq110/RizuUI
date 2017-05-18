@@ -35,9 +35,13 @@
 </template>
 
 <script>
-// import Card from '../components/card'
 export default {
-  // components: { Card }
+  data() {
+    return {
+      img: 'http://opctl018t.bkt.clouddn.com/dva.jpg',
+      img2: 'http://opctl018t.bkt.clouddn.com/hori.jpg'
+    }
+  }
 }
 </script>
 

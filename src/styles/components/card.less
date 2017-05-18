@@ -1,10 +1,9 @@
 @card-prefix: ~"@{css-prefix}card";
 
-
-
 .@{card-prefix} {
 
   &-mf {
+    position: relative;
     width: 300px; height: 600px;
     cursor: pointer;
     border: 2px solid black;
@@ -39,9 +38,10 @@
 
 
     & .card-button {
+      position: absolute;
+      top: 100%;left: 50%;
       width: 60px; height: 60px;
-      margin-left: 50%;
-      transform: translate(-50%,30%);
+      transform: translate(-50%,-50%);
       border-radius: 30px;
       background: rgb(68,19,22);
     }
@@ -94,7 +94,7 @@
       width: 80%; height: 40%;
       background: green;
       margin: 10% 10% 0 10%;
-      background: url(@sample-img ) center center no-repeat;
+      background: url(@sample-img) center center no-repeat;
       background-size: cover;
     }
 
@@ -110,7 +110,7 @@
     position: relative;
     cursor: pointer;
     width: 240px;height: 360px;
-    background: url(@sample-img ) center center no-repeat;
+    background: url(@sample-img) center center no-repeat;
     background-size: cover;
     transition: all 0.3s ease;
     animation-delay: 1s;
@@ -227,7 +227,7 @@
     & .container .image .img {
       position: relative;
       height: 100%; width: 100%;
-      background: url(@sample-img ) center center no-repeat;
+      background: url(@sample-img) center center no-repeat;
       background-size: cover;
     }
     & .container .image .icon{

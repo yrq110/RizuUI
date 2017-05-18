@@ -7,9 +7,7 @@
 </template>
 
 <script>
-// import Anima from '../components/anima'
 export default {
-  // components: { Anima }
 }
 </script>
 

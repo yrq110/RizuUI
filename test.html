@@ -9,7 +9,10 @@
 </head>
 <body>
 <div id="app">
-
+  <Card type="mf">
+    <template slot="card-title">Lorem ipsum</template>
+    <template slot="card-content">Lorem ipsum dolor sit amet.</template>
+  </Card>
 </div>
 <script>
   new Vue({
@@ -17,8 +20,8 @@
     data: {
     },
     methods: {
-    },
-    template: "<Button type='cp'>Button</Button>"
+    }
+    // template: "<Card type='mf'>Button</Card>"
   })
 </script>
 </body>
