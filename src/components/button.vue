@@ -4,7 +4,7 @@
 
     <template v-if="type == 'cp'">
       <span></span>
-      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30">
           <polyline points="6,6 12,12 6,18" stroke-width="3" stroke="black" fill="white"/>
       </svg>
     </template>

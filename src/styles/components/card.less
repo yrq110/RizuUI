@@ -411,4 +411,80 @@
       transform: scale(1.2) translateY(-50%);
     }
   }
+
+  &-kz {
+
+    position: relative;
+    width: 400px; height: 400px;
+    background: red;
+    cursor: pointer;
+
+    & .container {
+      position: relative;
+      height: 100%; width: 100%;
+      background: url('http://opctl018t.bkt.clouddn.com/dva.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    & .container:before {
+      content:'';
+      position: absolute;
+      top: 0;left: 0;bottom: 0;right: 0;
+      background: #d87a7b;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    & .container:hover:before {
+      top: 10%;left: 10%;bottom: 10%;right: 10%;
+      opacity: .6;
+    }
+
+    & .container .title {
+      position: absolute;
+      top: 40%;bottom: 0; left: 0; right: 0;
+      /*height: 100%;width: 100%;*/
+      text-align: center;
+      color: white;
+      font-size: 300%;
+      /*font-weight: bold;*/
+      transition: all .3s ease;
+    }
+
+    & .container:hover .title {
+      top: 20%;
+    }
+
+    & .container .content {
+      position: absolute;
+      top: 10%; bottom: 10%; left: 10%; right: 10%;
+      background: transparent;
+      opacity: 0;
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      font-weight: lighter;
+      padding: 20px;
+      padding-top: 130px;
+      transition: all .3s ease;
+    }
+
+    & .container:hover .content {
+      opacity: 1;
+    }
+
+    & .container .icon {
+      position: absolute;
+      bottom: 20%; left: 30%;
+      width: 40px;height: 40px;
+      background: transparent;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    & .container:hover .icon {
+      opacity: 1;
+      left: 45%;
+    }
+  }
 }
