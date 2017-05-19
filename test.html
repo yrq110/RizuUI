@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>RizuUI example</title>
-    <link rel="stylesheet" type="text/css" href="dist/styles/rizuui.css">
-    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
-    <script type="text/javascript" src="dist/rizuui.min.js"></script>
+  <meta charset="utf-8">
+  <title>RizuUI example</title>
+  <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/styles/rizuui.css">
+  <script type="text/javascript" src="dist/rizuui.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/rizu-ui@0.0.3/dist/styles/rizuui.css"> -->
+  <!-- <script type="text/javascript" src="https://unpkg.com/rizu-ui@0.0.3/dist/rizuui.min.js"></script> -->
 </head>
 <body>
 <div id="app">
-  <Card type="mf">
+  <Card type="mf" :img="img">
     <template slot="card-title">Lorem ipsum</template>
-    <template slot="card-content">Lorem ipsum dolor sit amet.</template>
+    <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</template>
   </Card>
 </div>
 <script>
   new Vue({
     el: '#app',
     data: {
-    },
-    methods: {
+      img: 'http://opctl018t.bkt.clouddn.com/mei.jpg'
     }
-    // template: "<Card type='mf'>Button</Card>"
   })
 </script>
 </body>
