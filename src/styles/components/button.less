@@ -281,6 +281,133 @@
     &:hover:before {
       transform: scaleX(1);
     }
+  }
+
+  &-kr {
+
+    .btn;
+
+    border: 2px black solid;
+    background: black;
+    color: white;
+    overflow: hidden;
+    z-index: 10;
+    transition: all .5s ease;
+
+
+    &:hover {
+      background: white;
+      color: black;
+      transition-delay: .5s;
+    }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transition: all .3s cubic-bezier(.075,.82,.165,1);
+      z-index: 2;
+    }
+
+    &:before {
+      right: 16px;
+      width: 3px;
+      height: 5px;
+      margin-top: -5px;
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+    }
+
+    &:hover:before {
+      border-top-color: black;
+      border-bottom-color: black;
+      transform: translateX(4px);
+      transition-delay: .5s;
+    }
+
+    &:after {
+      right: 12px;
+      width: 3px;
+      height: 3px;
+      margin-top: -1px;
+      border-right: 3px solid #fff;
+    }
+
+    &:hover:after {
+      border-right-color: black;
+      transform: translateX(4px);
+      transition-delay: .6s;
+    }
+
+    & .btn-txt {
+      display: block;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      letter-spacing: 1px;
+    }
+
+    & i:before, & i:after {
+      content: '';
+      position: absolute;
+      background: white;
+      z-index: 1;
+    }
+
+    &:hover > i:before {
+      animation: l .5s forwards;
+    }
+
+    &:hover > i:after {
+      animation: r .5s forwards;
+    }
+
+    @keyframes l {
+      0% {
+        left:12%;top:-12px;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.6,.04,.98,.335)
+      }
+      20% {
+        left:12%;top:36%;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.455,.03,.515,.955)
+      }
+      70%{
+        left:38%;top:36%;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.075,.82,.165,1)
+      }
+      80% {
+        left:48%;top:0;width:1px;height:101%;
+        animation-timing-function:cubic-bezier(.075,.82,.165,1)
+      }
+      to {
+        left:0;top:0;width:51%;height:101%;
+        animation-timing-function:cubic-bezier(.6,.04,.98,.335)
+      }
+    }
+
+    @keyframes r {
+      0% {
+        right:12%;top:101%;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.6,.04,.98,.335)
+      }
+      20% {
+        right:12%;top:36%;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.455,.03,.515,.955)
+      }
+      70% {
+        right:38%;top:36%;width:12px;height:12px;
+        animation-timing-function:cubic-bezier(.075,.82,.165,1)
+      }
+      80% {
+        right:48%;top:0;width:1px;height:101%;
+        animation-timing-function:cubic-bezier(.075,.82,.165,1)
+      }
+      to
+      {
+        right:0;top:0;width:51%;height:101%;
+        animation-timing-function:cubic-bezier(.6,.04,.98,.335)
+      }
+    }
 
   }
 }

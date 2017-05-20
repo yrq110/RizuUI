@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <template v-if="type == 'loading'">
+    <template v-if="type === 'loading'">
       <div class="circle"></div>
       <div class="circle delay-1"></div>
       <div class="circle delay-2"></div>

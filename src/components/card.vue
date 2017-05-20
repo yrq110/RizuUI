@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <template v-if="type == 'mf'">
+    <template v-if="type === 'mf'">
       <div class="card-image">
         <div class="img" :style="{backgroundImage: 'url('+ img + ')'}"></div>
       </div>
@@ -20,7 +20,7 @@
       </div>
     </template>
 
-    <template v-if="type == 'ko'">
+    <template v-if="type === 'ko'">
       <div class="content">
         <span class="category">
           <slot name="card-category">#category</slot>
@@ -37,7 +37,7 @@
       </div>
     </template>
 
-    <template v-if="type == 'gh'">
+    <template v-if="type === 'gh'">
       <div class="content" :style="{backgroundImage: 'url('+ img + ')'}">
         <div class="text">
           <span class="txt1">H</span>
@@ -50,7 +50,7 @@
       </div>
     </template>
 
-    <template v-if="type == 'cc'">
+    <template v-if="type === 'cc'">
       <div class="container">
         <div class="image">
           <div class="img" :style="{backgroundImage: 'url('+ img + ')'}"></div>
@@ -85,14 +85,14 @@
       </div>
     </template>
 
-    <template v-if="type == 'gh-2'">
+    <template v-if="type === 'gh-2'">
       <img :src='img2' alt="">
       <div class="overlay">
         <div class="caption">Hello world</div>
       </div>
     </template>
 
-    <template v-if="type == 'kz'">
+    <template v-if="type === 'kz'">
       <div class="container" :style="{backgroundImage: 'url('+ img + ')'}">
         <div class="title">
           <slot name="card-title">#title</slot>
