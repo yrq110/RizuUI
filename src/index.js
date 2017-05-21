@@ -1,7 +1,6 @@
 import Anima from './components/anima'
 import Button from './components/button'
 import Card from './components/card'
-// import Carousel from './components/carousel'
 import Hint from './components/hint'
 import Nav from './components/navigation'
 import Scroller from './components/scroller'
@@ -10,7 +9,6 @@ const rizu = {
   Anima,
   Button,
   Card,
-  // Carousel,
   Hint,
   Nav,
   Scroller
