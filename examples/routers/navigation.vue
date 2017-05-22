@@ -2,7 +2,7 @@
   <div>
     <ul class="vertical">
       <li class="muu"><Nav type="muu"></Nav></li>
-      <li class="ct"><Nav type="ct"></Nav></li>
+      <li class="ct"><Nav type="ct" :list="list"></Nav></li>
       <li class="mu"><Nav type="mu" :items="items"></Nav></li>
       <li class="vc"><Nav type="vc" :items="items_2"></Nav></li>
     </ul>
@@ -13,6 +13,7 @@
 export default {
   data () {
     return {
+      list: ['yrq', 'yepoch', 'rizu', 'dixxxy'],
       items: [
         {
           title: 'People',

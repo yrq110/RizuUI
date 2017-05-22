@@ -11,17 +11,59 @@
 </head>
 <body>
 <div id="app">
-  <Card type="mf" :img="img">
+  <!-- <Card type="mf" :img="img">
     <template slot="card-title">Lorem ipsum</template>
     <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</template>
-  </Card>
+  </Card> -->
 </div>
 <script>
   new Vue({
     el: '#app',
     data: {
-      img: 'http://opctl018t.bkt.clouddn.com/mei.jpg'
-    }
+      list: ['yrq', 'yepoch', 'rizu', 'dixxxy'],
+      items: [
+        {
+          title: 'People',
+          lists: [
+            'yrq', 'yepoch', 'dixxxy', 'rizu'
+          ]
+        },
+        {
+          title: 'Object',
+          lists: [
+            'Math', 'English', 'Physics', 'Chemistry'
+          ]
+        },
+        {
+          title: 'foo',
+          lists: [
+            'zhangsan', 'lisi', 'wangwu'
+          ]
+        },
+        {
+          title: '天干',
+          lists: [
+            '甲', '乙', '丙', '丁', '戊', '己', '辛', '壬', '癸'
+          ]
+        }
+      ],
+      items_2: [
+        {
+          title: 'LEARN',
+          content: 'Know naraken'
+        },
+        {
+          title: 'SEEN',
+          content: 'Scene in naraken'
+        },
+        {
+          title: 'TRY',
+          content: 'Reason for visit'
+        }
+      ]
+    },
+    // template: '<Nav type="mu" :items="items" style="width:500px;height:600px;"></Nav>'
+    template: '<Nav type="vc" :items="items_2" style="width:150px;height:700px;"></Nav>'
   })
 </script>
 </body>

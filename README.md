@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# RizuUI [![npm](https://img.shields.io/npm/v/rizu-ui.svg?style=flat-square)](https://www.npmjs.com/package/rizu-ui) [![CRAN](https://img.shields.io/npm/l/rizu-ui.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![NPM downloads](http://img.shields.io/npm/dm/rizu-ui.svg?style=flat-square)](https://npmjs.org/package/rizu-ui)
+# RizuUI [![](https://img.shields.io/travis/yrq110/RizuUI.svg?style=flat-square)](https://travis-ci.org/yrq110/RizuUI) [![npm](https://img.shields.io/npm/v/rizu-ui.svg?style=flat-square)](https://www.npmjs.com/package/rizu-ui) [![NPM downloads](http://img.shields.io/npm/dm/rizu-ui.svg?style=flat-square)](https://npmjs.org/package/rizu-ui) [![CRAN](https://img.shields.io/npm/l/rizu-ui.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ### A cool UI Toolkit with Vue.js
 
@@ -12,14 +12,16 @@ still working...
 
 ## Doc
 
-[English](https://rizu-ui.github.io)
-[中文](https://rizu-ui.github.io/#/zh-cn/)
+* [English](https://rizu-ui.github.io)
+* [中文](https://rizu-ui.github.io/#/zh-cn/)
 
 ## Features
+
 * npm + webpack + vue2
 * es2015 + less
 
 ## Components
+
 * Animation
 * Button
 * Card
@@ -27,6 +29,7 @@ still working...
 * Hint
 
 ## Install
+
 NPM
 ```bash
 npm install rizu-ui --save
@@ -39,6 +42,7 @@ CDN
 ```
 
 ## Usage
+
 Import all
 ```js
 import { RizuUI } from 'rizu-ui';
@@ -65,6 +69,7 @@ Use components
 ```
 
 ## Thanks
+
 * [iView](https://github.com/iview/iview)
 * [vue-loading](https://github.com/jkchao/vue-loading)
 * [RadonUI](https://github.com/luojilab/radon-ui)
