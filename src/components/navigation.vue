@@ -172,12 +172,14 @@ export default {
     },
     list: {
       type: Array,
+      required: true,
       default: function () {
         return ['home', 'book', 'music', 'forum']
       }
     },
     items: {
       type: Array,
+      required: true,
       default: function () {
         return [
           {
@@ -191,6 +193,7 @@ export default {
     },
     navdata: {
       type: Object,
+      required: true,
       default: function () {
         return {
           title: 'Lorem ipsum',
