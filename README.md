@@ -1,48 +1,59 @@
-# RizuUI
-
 <p align="center">
   <a href="https://rizu-ui.github.io" target="\_blank">
     <img src="https://github.com/yrq110/RizuUI/blob/master/assets/logo.png" width="128px">
   </a>
 </p>
 
+# RizuUI [![npm](https://img.shields.io/npm/v/rizu-ui.svg?style=flat-square)](https://www.npmjs.com/package/rizu-ui) [![CRAN](https://img.shields.io/npm/l/rizu-ui.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![NPM downloads](http://img.shields.io/npm/dm/rizu-ui.svg?style=flat-square)](https://npmjs.org/package/rizu-ui)
+
 ### A cool UI Toolkit with Vue.js
 
-working...
+still working...
 
 ## Doc
 
-[中文文档](https://rizu-ui.github.io)
+[English](https://rizu-ui.github.io)
+[中文](https://rizu-ui.github.io/#/zh-cn/)
 
 ## Features
 * npm + webpack + vue2
 * es2015 + less
 
 ## Components
-* button(7)
-* card(4)
-* navigation(2)
-* hint(1)
-* animate(1)
+* Animation
+* Button
+* Card
+* Navigation
+* Hint
 
 ## Install
+NPM
 ```bash
 npm install rizu-ui --save
 ```
-or
+CDN
 ```html
+<script src="//vuejs.org/js/vue.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//unpkg.com/dist/styles/rizuui.css">
 <script type="text/javascript" src="//unpkg.com/rizu-ui/dist/rizuui.min.js"></script>
 ```
+
 ## Usage
-`main.js`
+Import all
 ```js
 import { RizuUI } from 'rizu-ui';
 import 'rizu-ui/dist/styles/rizuui.css'
 
 Vue.use(RizuUI);
 ```
-`demo.vue`
+Import components
+```js
+import { component } from 'rizu-ui'
+Vue.component(component.name, component);
+```
+> When import components you should also import css file.
+
+Use components
 ```html
 <template>
     <Button type='gh'></Button>
@@ -52,6 +63,7 @@ Vue.use(RizuUI);
   }
 </script>
 ```
+
 ## Thanks
 * [iView](https://github.com/iview/iview)
 * [vue-loading](https://github.com/jkchao/vue-loading)
