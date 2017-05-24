@@ -40,8 +40,10 @@
         <nav>
           <div class="cate" v-for="item in items">
             <h2>{{ item.title }}</h2>
-            <ul v-for="li in item.lists">
-              <li><a href="#">{{li}}</a></li>
+            <ul>
+              <template v-for="li in item.lists">
+                <li><a href="#">{{li}}</a></li>
+              </template>
             </ul>
           </div>
         </nav>
@@ -255,22 +257,6 @@ export default {
   },
   mounted () {
     switch (this.type) {
-      case 'ct':
-        var span = document.querySelectorAll('.rz-nav-ct span')
-        var ul = document.querySelector('.rz-nav-ct ul')
-
-        ul.onmouseenter = function () {
-          for (var i = 0; i < span.length; i++) {
-            span[i].className = 'span-in'
-          }
-        }
-
-        ul.onmouseleave = function () {
-          for (var i = 0; i < span.length; i++) {
-            span[i].className = 'span-out'
-          }
-        }
-        break
       case 'mu':
         var cate = document.querySelector('.rz-nav-mu cate')
         var main = document.querySelector('.rz-nav-mu main')

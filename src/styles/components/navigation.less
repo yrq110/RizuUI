@@ -6,6 +6,7 @@
     & nav {
       text-align: center;
       max-width: 100px;
+      overflow: hidden;
     }
 
     & ul {
@@ -38,17 +39,25 @@
       color: black;
       transform: translateX(-100px);
     }
+    & nav:not(:hover) span {
+      transition: .3s transform;
+      transform: translateX(-100px);
+    }
 
-    & .span-in {
+    & nav:hover span {
       transform: translateX(0px);
       transition: 0.3s transform;
     }
-
-
-    & .span-out {
-      transform: translateX(-100px);
-      transition: 0.3s transform;
-    }
+    // & .span-in {
+    //   transform: translateX(0px);
+    //   transition: 0.3s transform;
+    // }
+    //
+    //
+    // & .span-out {
+    //   transform: translateX(-100px);
+    //   transition: 0.3s transform;
+    // }
 
     & a:hover {
       transform: translateY(5px);
@@ -135,6 +144,10 @@
       transform: translateX(0%);
     }
 
+    & .nav nav h2{
+      color: white;
+    }
+
     & ul {
       list-style: none;
       padding: 0;
@@ -172,7 +185,6 @@
 
     & .nav ul {
       margin: 0; padding: 0;
-      // position: relative;
     }
 
     & .nav ul li {
@@ -261,6 +273,7 @@
       position: absolute;
       left: 120%;top:30%;
       width: 200%;height: 30%;
+      line-height: 30%;
       padding-top: 20px;
       text-align: center;
       background: #4c2c31;
@@ -274,10 +287,16 @@
       z-index: -1;
       content: '';
       position: absolute;
-      left: -5%;top: 10px;
-      width: 40px;height: 40px;
-      background: #4c2c31;
-      transform: rotate(45deg);
+      display: block;
+
+      overflow: hidden;
+      width: 0px;
+      height: 0px;
+      border: 15px solid white;
+      border-color: white #4c2c31;
+      border-width: 15px 15px 15px 0;
+      left: -15px;
+      top: 15%;
     }
 
     & .nav-item:hover {
