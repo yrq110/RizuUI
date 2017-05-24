@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li><Button type="gh">Button</Button></li>
-      <li><Button type="ts">Button</Button></li>
+      <li><Button type="ts" data-text="Button"></Button></li>
       <li><Button type="ts-2">Button</Button></li>
       <li><Button type="mg">Button</Button></li>
       <li><Button type="cp">Button</Button></li>
