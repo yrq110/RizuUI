@@ -36,6 +36,12 @@
           <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit</template>
         </Card>
       </li>
+      <li>
+        <Card type="md" :img="img">
+          <template slot="card-title">Lorem ipsum</template>
+          <template slot="card-content">Lorem ipsum</template>
+        </Card>
+      </li>
     </ul>
   </div>
 </template>

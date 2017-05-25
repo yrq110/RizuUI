@@ -2,35 +2,4 @@
 
 .@{anm-prefix} {
 
-  &-loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;width: 200px;
-
-    & .circle {
-      margin: 0 10px;
-      width: 20px;height:20px;
-      border-radius: 10px;
-      background-color: rgb(0,149,255);
-      animation: move 2s infinite;
-    }
-    & .delay-1 {
-      animation-delay: 0.3s;
-    }
-
-    & .delay-2 {
-      animation-delay: 0.6s;
-    }
-
-    & .delay-3 {
-      animation-delay: 0.9s;
-    }
-
-    @keyframes move {
-      50% {
-        transform: translateY(40px);
-      }
-    }
-  }
 }

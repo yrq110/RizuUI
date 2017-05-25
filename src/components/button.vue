@@ -27,6 +27,9 @@
       </span>
       <i></i>
     </template>
+
+    <template v-if="type === 'ei'">
+    </template>
   </div>
 </template>
 

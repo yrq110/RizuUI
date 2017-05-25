@@ -1,7 +1,8 @@
 <template>
   <div>
     <ul>
-      <li><Anima type="loading"></Anima></li>
+      <li><Anima type="zh"></Anima></li>
+      <li><Anima type="bd"></Anima></li>
     </ul>
   </div>
 </template>

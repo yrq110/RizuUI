@@ -424,7 +424,7 @@
     & .container {
       position: relative;
       height: 100%; width: 100%;
-      background: url('http://opctl018t.bkt.clouddn.com/dva.jpg') center center no-repeat;
+      background: url(@sample-img) center center no-repeat;
       background-size: cover;
     }
 
@@ -486,5 +486,50 @@
       opacity: 1;
       left: 45%;
     }
+  }
+
+  &-md {
+
+    position: relative;
+    width: 600px; height: 400px;
+
+    & .image {
+      position: absolute;
+      top: 0;bottom: 0;left: 0;right: 0;
+      background: url(@sample-img) center center no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    & .overlay {
+      position: absolute;
+      top: 5px;bottom: 5px;left: 5px;right: 5px;
+      background: white;
+      z-index: 2;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    & .overlay .title {
+      position: absolute;
+      font-size: 250%;
+      top: 40%;left: 50%;
+      max-width: 50%;
+      text-transform: none;
+      text-align: center;
+      text-decoration: underline;
+      transform: translate(-50%,-50%);
+    }
+
+    & .overlay .content {
+      position: absolute;
+      bottom: 10%;left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
   }
 }

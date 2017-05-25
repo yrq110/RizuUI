@@ -107,6 +107,19 @@
         </span>
       </div>
     </template>
+
+    <template v-if="type === 'md'">
+      <div class="image" :style="{backgroundImage: 'url('+ img + ')'}">
+      </div>
+      <div class="overlay">
+        <div class="title">
+          <slot name="card-title">#title</slot>
+        </div>
+        <div class="content">
+          <slot name="card-content">#content</slot>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 

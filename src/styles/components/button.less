@@ -413,6 +413,31 @@
         animation-timing-function:cubic-bezier(.6,.04,.98,.335)
       }
     }
+  }
 
+  &-ei {
+    .btn;
+
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 2px;left: 0;
+      width: 100%; height: 2px;
+      background: black;
+      opacity: 0;
+      transform: translateY(3px) scaleX(.8) skewY(6deg);
+      transition: transform .6s cubic-bezier(.23,1,.32,1),opacity .2s cubic-bezier(.23,1,.32,1);
+    }
+
+    &:hover:after {
+      bottom: 5px;
+      opacity: 1;
+      transform: translateY(0) scaleX(1) skewY(0);
+      transition-duration: .6s, .4s;
+    }
   }
 }
