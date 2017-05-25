@@ -5,7 +5,7 @@
         <div class="img" :style="{backgroundImage: 'url('+ img + ')'}"></div>
       </div>
       <div class="card-content">
-        <div class="title">
+        <div class="card-title">
           <slot name="card-title">#title</slot>
         </div>
         <div class="para">
@@ -21,7 +21,7 @@
     </template>
 
     <template v-if="type === 'ko'">
-      <div class="content">
+      <div class="card-content">
         <span class="category">
           <slot name="card-category">#category</slot>
         </span>
@@ -38,7 +38,7 @@
     </template>
 
     <template v-if="type === 'gh'">
-      <div class="content" :style="{backgroundImage: 'url('+ img + ')'}">
+      <div class="card-content" :style="{backgroundImage: 'url('+ img + ')'}">
         <div class="text">
           <span class="txt1">H</span>
           <span class="txt2">E</span>
@@ -61,7 +61,7 @@
             </svg>
           </div>
         </div>
-        <div class="content">
+        <div class="card-content">
           <h5>
             <slot name="card-title">#title</slot>
           </h5>
@@ -94,10 +94,10 @@
 
     <template v-if="type === 'kz'">
       <div class="container" :style="{backgroundImage: 'url('+ img + ')'}">
-        <div class="title">
+        <div class="card-title">
           <slot name="card-title">#title</slot>
         </div>
-        <div class="content">
+        <div class="card-content">
           <slot name="card-content">#content</slot>
         </div>
         <span class="icon">
@@ -112,10 +112,10 @@
       <div class="image" :style="{backgroundImage: 'url('+ img + ')'}">
       </div>
       <div class="overlay">
-        <div class="title">
+        <div class="card-title">
           <slot name="card-title">#title</slot>
         </div>
-        <div class="content">
+        <div class="card-content">
           <slot name="card-content">#content</slot>
         </div>
       </div>

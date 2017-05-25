@@ -27,7 +27,7 @@
       transform: scale(1.1);
     }
 
-    & .card-content .title{
+    & .card-content .card-title{
       margin: 20px auto;
       font-weight: bold;
       color: rgb(189,91,90);
@@ -68,7 +68,7 @@
     width: 400px; height: 600px;
     background: red;
 
-    & .content {
+    & .card-content {
       position: absolute;
       top: 0;left: 0;
       width: 100%; height: 100%;
@@ -76,11 +76,11 @@
       transition: all 0.5s ease;
     }
 
-    &:hover .content {
+    &:hover .card-content {
       transform: translate(-10px,-10px);
     }
 
-    & .content .category {
+    & .card-content .category {
       display: inline-block;
       position: absolute;
       left: 10%; top: -2%;
@@ -91,7 +91,7 @@
       text-align: center;
     }
 
-    & .content .image {
+    & .card-content .image {
       position: relative;
       width: 80%; height: 40%;
       background: green;
@@ -108,7 +108,7 @@
   }
 
   &-gh {
-    & .content {
+    & .card-content {
       display: block;
       position: relative;
       cursor: pointer;
@@ -122,7 +122,7 @@
       animation-fill-mode: both;
     }
 
-    & .content:before {
+    & .card-content:before {
       position: absolute;
       top: 2px;
       left: 2px;
@@ -134,7 +134,7 @@
       transition: all 0.3s ease;
     }
 
-    & .content:after {
+    & .card-content:after {
       position: absolute;
       top: 70%;
       left: 70%;
@@ -146,25 +146,25 @@
       transition: all 0.5s ease;
     }
 
-    & .content:hover {
+    & .card-content:hover {
       transform: translateY(-5px);
     }
 
-    & .content:hover:before {
+    & .card-content:hover:before {
       right: 2px;
       bottom: 2px;
       border-top: white 1px solid;
       border-left: white 1px solid;
     }
 
-    & .content:hover:after {
+    & .card-content:hover:after {
       top: 2px;
       left: 2px;
       border-bottom: white 1px solid;
       border-right: white 1px solid;
     }
 
-    & .content .text {
+    & .card-content .text {
       position: absolute;
       top: -20px;right: 0;left: 0;
       text-align: center;
@@ -172,32 +172,32 @@
       letter-spacing: 3px;
     }
 
-    & .content .text span {
+    & .card-content .text span {
       display: inline-block;
       transition: all .3s ease;
     }
 
-    & .content:hover .text span.txt1 {
+    & .card-content:hover .text span.txt1 {
       animation: up-down .5s .05s;
     }
 
-    & .content:hover .text span.txt2 {
+    & .card-content:hover .text span.txt2 {
       animation: up-down .5s .15s;
     }
 
-    & .content:hover .text span.txt3 {
+    & .card-content:hover .text span.txt3 {
       animation: up-down .5s .25s;
     }
 
-    & .content:hover .text span.txt4 {
+    & .card-content:hover .text span.txt4 {
       animation: up-down .5s .35s;
     }
 
-    & .content:hover .text span.txt5 {
+    & .card-content:hover .text span.txt5 {
       animation: up-down .5s .45s;
     }
 
-    & .content:hover .text span.txt6 {
+    & .card-content:hover .text span.txt6 {
       animation: up-down .5s .55s;
     }
 
@@ -246,7 +246,7 @@
       background: #ff8c85;
     }
 
-    & .container .content{
+    & .container .card-content{
       position: relative;
       left: 0;
       height: 40%;
@@ -254,7 +254,7 @@
       text-align: center;
     }
 
-    & .container .content h5 {
+    & .container .card-content h5 {
       margin: 40px 0 0;
       font-family: greycliff-bold;
       font-weight: 400;
@@ -264,7 +264,7 @@
       text-transform: uppercase;
     }
 
-    & .container .content h5:after {
+    & .container .card-content h5:after {
       content: "";
       width: 40px;
       height: 1px;
@@ -274,14 +274,14 @@
       margin: 1.125rem auto .875rem;
     }
 
-    & .container .content p {
+    & .container .card-content p {
       color: #b9b9b9;
       // margin: 0;
       line-height: 1.4;
       font-size: 80%;
     }
 
-    & .container .content .btn {
+    & .container .card-content .btn {
       z-index: 2;
       position: absolute;
       bottom: 0; left: 50%;
@@ -296,7 +296,7 @@
       letter-spacing: 3px;
     }
 
-    & .container .content .btn:before {
+    & .container .card-content .btn:before {
       z-index: -1;
       content: '';
       position: absolute;
@@ -305,7 +305,7 @@
       box-shadow: 0 0 20px rgba(32,14,17,.3);
     }
 
-    & .container .content .btn:after {
+    & .container .card-content .btn:after {
       z-index: -2;
       content: '';
       position: absolute;
@@ -313,11 +313,11 @@
       background-image: linear-gradient(127deg,#ff79a2 -35%,#ff9f68 130%);
     }
 
-    & .content .btn:hover:before {
+    & .card-content .btn:hover:before {
       top: -10px;left: -10px;right: -10px;bottom: -10px;
     }
 
-    & .content .btn .icon {
+    & .card-content .btn .icon {
       position: absolute;
       left: 0;
       display: inline-block;
@@ -325,7 +325,7 @@
       transition: all .3s ease;
     }
 
-    & .content .btn .label {
+    & .card-content .btn .label {
       position: absolute;
       left: 50%;
       display: inline-block;
@@ -333,7 +333,7 @@
       transition: all .3s ease;
     }
 
-    & .content .btn .label:before {
+    & .card-content .btn .label:before {
       content: "";
       position: absolute;
       top: 50%;left: 0;
@@ -344,7 +344,7 @@
       transition: all .35s cubic-bezier(.8,0,.2,1);
     }
 
-    & .content .btn .label .text{
+    & .card-content .btn .label .text{
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -442,7 +442,7 @@
       opacity: .6;
     }
 
-    & .container .title {
+    & .container .card-title {
       position: absolute;
       top: 40%;bottom: 0; left: 0; right: 0;
       text-align: center;
@@ -451,11 +451,11 @@
       transition: all .3s ease;
     }
 
-    & .container:hover .title {
+    & .container:hover .card-title {
       top: 20%;
     }
 
-    & .container .content {
+    & .container .card-content {
       position: absolute;
       top: 10%; bottom: 10%; left: 10%; right: 10%;
       background: transparent;
@@ -469,7 +469,7 @@
       transition: all .3s ease;
     }
 
-    & .container:hover .content {
+    & .container:hover .card-content {
       opacity: 1;
     }
 
@@ -514,7 +514,7 @@
       opacity: 1;
     }
 
-    & .overlay .title {
+    & .overlay .card-title {
       position: absolute;
       font-size: 250%;
       top: 40%;left: 50%;
@@ -525,7 +525,7 @@
       transform: translate(-50%,-50%);
     }
 
-    & .overlay .content {
+    & .overlay .card-content {
       position: absolute;
       bottom: 10%;left: 50%;
       transform: translate(-50%,-50%);
