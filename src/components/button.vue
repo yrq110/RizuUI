@@ -6,7 +6,7 @@
 
     <template v-if="type === 'cp'">
       <span></span>
-      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30">
+      <svg height="40" width="30" viewBox="0 0 24 24" >
           <polyline points="6,6 12,12 6,18" stroke-width="3" stroke="black" fill="white"/>
       </svg>
     </template>

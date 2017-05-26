@@ -27,13 +27,20 @@
       transform: scale(1.1);
     }
 
+    & .card-content {
+      font-family:@font-family;
+    }
+
     & .card-content .card-title{
       margin: 20px auto;
       font-weight: bold;
+      font-size: @font-size-large;
       color: rgb(189,91,90);
     }
 
     & .card-content .para{
+      font-size: @font-size-small;
+      line-height: 1.4;
       margin: 0 10px;
     }
 
@@ -73,6 +80,7 @@
       top: 0;left: 0;
       width: 100%; height: 100%;
       background: white;
+      font-family:@font-family;
       transition: all 0.5s ease;
     }
 
@@ -104,6 +112,16 @@
       position: relative;
       width: 80%; height: 40%;
       margin: 10% 10% 0 10%;
+
+    }
+
+    & .contents .contents-title {
+      font-size: @font-size-large;
+    }
+
+    & .contents .contents-intro {
+      font-size: @font-size-small;
+      line-height: 1.4;
     }
   }
 
@@ -252,6 +270,7 @@
       height: 40%;
       padding: 0 30px;
       text-align: center;
+      font-family:@font-family;
     }
 
     & .container .card-content h5 {
@@ -276,9 +295,9 @@
 
     & .container .card-content p {
       color: #b9b9b9;
-      // margin: 0;
       line-height: 1.4;
-      font-size: 80%;
+      // font-size: 80%;
+      font-size: @font-size-tiny;
     }
 
     & .container .card-content .btn {
@@ -426,6 +445,7 @@
       height: 100%; width: 100%;
       background: url(@sample-img) center center no-repeat;
       background-size: cover;
+      font-family: @font-family;
     }
 
     & .container:before {
@@ -447,12 +467,14 @@
       top: 40%;bottom: 0; left: 0; right: 0;
       text-align: center;
       color: white;
-      font-size: 300%;
+      // font-size: 300%;
+      font-size: @font-size-bigger;
       transition: all .3s ease;
     }
 
     & .container:hover .card-title {
       top: 20%;
+      // font-size: @font-size-large;
     }
 
     & .container .card-content {
@@ -462,8 +484,8 @@
       opacity: 0;
       text-align: center;
       color: white;
-      font-size: 150%;
-      font-weight: lighter;
+      // font-size: 150%;
+      font-size: @font-size-larger;
       padding: 20px;
       padding-top: 130px;
       transition: all .3s ease;
@@ -507,6 +529,7 @@
       background: white;
       z-index: 2;
       opacity: 0;
+      font-family: @font-family;
       transition: all .3s ease;
     }
 
@@ -516,7 +539,7 @@
 
     & .overlay .card-title {
       position: absolute;
-      font-size: 250%;
+      font-size: @font-size-big;
       top: 40%;left: 50%;
       max-width: 50%;
       text-transform: none;
@@ -529,6 +552,7 @@
       position: absolute;
       bottom: 10%;left: 50%;
       transform: translate(-50%,-50%);
+      font-size: @font-size-middle;
     }
 
   }
