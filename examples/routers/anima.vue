@@ -3,6 +3,7 @@
     <ul>
       <li><Anima type="zh"></Anima></li>
       <li><Anima type="bd"></Anima></li>
+      <li><Anima type="ob"></Anima></li>
     </ul>
   </div>
 </template>
