@@ -53,14 +53,14 @@
 
     <template v-if="type === 'text-1' || type === 'text-2'">
       <svg viewBox="0 0 1300 300" >
-        <symbol id="a-text">
+        <symbol :id="textID">
           <text text-anchor="middle" x="50%" y="50%" dy=".35em" :style="{fontFamily:textFontFamily}">
             <slot name="text">Demo</slot>
           </text>
         </symbol>
-        <use xlink:href="#a-text" class="text" :style="{stroke:textStroke[0],strokeWidth:textWidth}"></use>
-        <use xlink:href="#a-text" class="text" :style="{stroke:textStroke[1],strokeWidth:textWidth}"></use>
-        <use xlink:href="#a-text" class="text" :style="{stroke:textStroke[2],strokeWidth:textWidth}"></use>
+        <use :xlink:href="'#' + textID" class="text" :style="{stroke:textStroke[0],strokeWidth:textWidth}"></use>
+        <use :xlink:href="'#' + textID" class="text" :style="{stroke:textStroke[1],strokeWidth:textWidth}"></use>
+        <use :xlink:href="'#' + textID" class="text" :style="{stroke:textStroke[2],strokeWidth:textWidth}"></use>
       </svg>
     </template>
   </div>
@@ -74,7 +74,7 @@ export default {
     type: {
       type: String,
       required: false,
-      default: 'zh'
+      default: 'ball-1'
     },
     textStroke: {
       type: Array,
@@ -93,6 +93,9 @@ export default {
   computed: {
     classes () {
       return `${prefixCls}-${this.type}`
+    },
+    textID () {
+      return Math.random().toString(10).substr(2)
     }
   }
 }

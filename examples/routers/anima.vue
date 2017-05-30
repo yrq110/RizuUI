@@ -4,7 +4,8 @@
       <li><Anima type="ball-1"></Anima></li>
       <li><Anima type="ball-2"></Anima></li>
       <li><Anima type="ball-3"></Anima></li>
-      <li><Anima type="text-1" :textStroke=textStroke :textWidth=textWidth :textFontFamily=textFontFamily><template slot="text">Rizu</template></Anima></li>
+      <li><Anima type="text-1" ><template slot="text">Rizu</template></Anima></li>
+      <li><Anima type="text-1" :textStroke="textStroke" :textWidth="textWidth" :textFontFamily="textFontFamily"><template slot="text">Hello</template></Anima></li>
       <li><Anima type="text-2"><template slot="text">Rizu</template></Anima></li>
     </ul>
   </div>
