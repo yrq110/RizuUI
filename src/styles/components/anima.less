@@ -1,5 +1,98 @@
 @anm-prefix: ~"@{css-prefix}anm";
-
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma');
 .@{anm-prefix} {
+  &-text-1 {
 
+    & svg {
+      font: 14.5em/1 'Baloo Tamma', cursive;
+      text-transform: uppercase;
+    }
+
+    & .text {
+      fill: none;
+      stroke-dasharray: 80 160;
+      stroke-dashoffset: 0;
+    }
+
+    & .text:nth-child(3n + 1) {
+      stroke-dashoffset: 0;
+      animation: stroke-dashoffset-1 2s infinite linear;
+    }
+    & .text:nth-child(3n + 2) {
+      stroke-dashoffset: 80;
+      animation: stroke-dashoffset-2 2s infinite linear;
+    }
+
+    & .text:nth-child(3n + 3) {
+      stroke-dashoffset: 160;
+      animation: stroke-dashoffset-3 2s infinite linear;
+    }
+
+    @keyframes stroke-dashoffset-1 {
+      100% {
+        stroke-dashoffset: 240;
+      }
+    }
+
+    @keyframes stroke-dashoffset-2 {
+      100% {
+        stroke-dashoffset: 320;
+      }
+    }
+
+    @keyframes stroke-dashoffset-3 {
+      100% {
+        stroke-dashoffset: 400;
+      }
+    }
+  }
+
+  &-text-2 {
+
+    & svg {
+      font: 14.5em/1 'Baloo Tamma', cursive;
+      text-transform: uppercase;
+    }
+
+    & .text {
+      fill: none;
+      stroke-dasharray: 0 300;
+      stroke-dashoffset: 0;
+    }
+
+    & .text:nth-child(3n + 1) {
+      stroke: #F60A0A;
+      animation: stroke-offset-array-1 6s  ease-in-out forwards;
+    }
+    & .text:nth-child(3n + 2) {
+      stroke: #F2FF14;
+      animation: stroke-offset-array-2 6s  ease-in-out forwards;
+    }
+
+    & .text:nth-child(3n + 3) {
+      stroke: #FB9505;
+      animation: stroke-offset-array-3 6s  ease-in-out forwards;
+    }
+
+    @keyframes stroke-offset-array-1 {
+      100% {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 80 160;
+      }
+    }
+
+    @keyframes stroke-offset-array-2 {
+      100% {
+        stroke-dashoffset: 1080;
+        stroke-dasharray: 80 160;
+      }
+    }
+
+    @keyframes stroke-offset-array-3 {
+      100% {
+        stroke-dashoffset: 1160;
+        stroke-dasharray: 80 160;
+      }
+    }
+  }
 }
