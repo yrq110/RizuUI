@@ -60,7 +60,7 @@ Vue.component(component.name, component);
 Use components
 ```html
 <template>
-    <Button type='gh'></Button>
+    <RzButton type='gh'>Hello</RzButton>
 </template>
 <script>
   export default {
