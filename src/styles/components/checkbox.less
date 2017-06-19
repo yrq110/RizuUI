@@ -1,0 +1,90 @@
+@checkbox-prefix: ~"@{css-prefix}checkbox";
+
+.@{checkbox-prefix} {
+
+  &-lig {
+
+    color: #000;
+    font-size:25px;
+    position: relative;
+    margin-bottom: 25px;
+    user-select: none;
+
+    & input[type="checkbox"]{
+      display: none !important;
+      appearance: none;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background: #fff;
+      vertical-align: top;
+      position: relative;
+      top: -5px;
+      margin-right: 10px;
+      box-sizing: border-box;
+      border: 3px solid #999;
+      border-radius: 3px;
+      transition: border 0.3s;
+    }
+
+    & input[type="checkbox"]:focus {
+      outline:rgba(0,0,0,0);
+    }
+
+    & input[type="checkbox"]:checked{
+      border: 3px solid #000;
+    }
+
+    & input[type="checkbox"]:checked ~ label{
+      color: #000;
+    }
+
+    & input[type="checkbox"]:checked ~ label::before {
+      border: 3px solid #000;
+    }
+
+    & input[type="checkbox"]:checked ~ label svg path{
+      stroke-dashoffset:0;
+      stroke-opacity:1;
+    }
+
+    & label{
+      cursor: pointer;
+      color: #999;
+      transition: color　0.3s;
+    }
+
+    & label:before{
+      content : '';
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-right: 15px;
+      position: relative;
+      top: 7px;
+      border: 3px solid #999;
+      border-radius: 3px;
+    }
+
+    & svg{
+      width: 24px;
+      height: 24px;
+      left : 4px;
+      top : 13px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    & svg path {
+      fill: none;
+      stroke: #000;
+      stroke-linejoin:round;
+      stroke-linecap:round;
+      stroke-dasharray: 51;
+      stroke-dashoffset:51;
+      stroke-opacity:0;
+      stroke-width:4px;
+      transition: stroke-dashoffset 0.3s ease, stroke-opacity 0.3s;
+    }
+  }
+}

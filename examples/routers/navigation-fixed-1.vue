@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav type="nd" :navdata="navdata"></Nav>
+    <RzNav type="nd" :navdata="navdata"></RzNav>
   </div>
 </template>
 

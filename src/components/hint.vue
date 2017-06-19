@@ -12,9 +12,8 @@
 
 <script>
 const prefixCls = 'rz-hint'
-
 export default {
-  name: 'Hint',
+  name: 'RzHint',
   props: {
     type: {
       type: String,

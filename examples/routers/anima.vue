@@ -1,12 +1,12 @@
 <template>
   <div>
     <ul>
-      <li><Anima type="ball-1"></Anima></li>
-      <li><Anima type="ball-2"></Anima></li>
-      <li><Anima type="ball-3"></Anima></li>
-      <li><Anima type="text-1" ><template slot="text">Rizu</template></Anima></li>
-      <li><Anima type="text-1" :textStroke="textStroke" :textWidth="textWidth" :textFontFamily="textFontFamily"><template slot="text">Hello</template></Anima></li>
-      <li><Anima type="text-2"><template slot="text">Rizu</template></Anima></li>
+      <li><RzAnima type="ball-1"></RzAnima></li>
+      <li><RzAnima type="ball-2"></RzAnima></li>
+      <li><RzAnima type="ball-3"></RzAnima></li>
+      <li><RzAnima type="text-1"><template slot="text">Rizu</template></RzAnima></li>
+      <li><RzAnima type="text-1" :textStroke="textStroke" :textWidth="textWidth" :textFontFamily="textFontFamily"><template slot="text">Hello</template></RzAnima></li>
+      <li><RzAnima type="text-2"><template slot="text">Rizu</template></RzAnima></li>
     </ul>
   </div>
 </template>

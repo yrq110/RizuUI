@@ -36,7 +36,7 @@
 <script>
 const prefixCls = 'rz-btn'
 export default {
-  name: 'Button',
+  name: 'RzButton',
   props: {
     type: {
       type: String,

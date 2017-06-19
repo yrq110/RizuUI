@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Scroller></Scroller>
+    <RzScroller></RzScroller>
   </div>
 </template>
 

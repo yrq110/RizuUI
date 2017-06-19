@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav type="muu"></Nav>
+    <RzNav type="muu"></RzNav>
     <img src="http://opctl018t.bkt.clouddn.com/nav1.jpg" alt="">
     <img src="http://opctl018t.bkt.clouddn.com/nav2.jpg" alt="">
     <img src="http://opctl018t.bkt.clouddn.com/nav3.jpg" alt="">

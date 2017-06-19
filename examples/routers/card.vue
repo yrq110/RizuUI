@@ -3,44 +3,44 @@
     <p>pic from Ask</p>
     <ul>
       <li>
-        <Card type="mf" :img="img">
+        <RzCard type="mf" :img="img">
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</template>
-        </Card>
+        </RzCard>
       </li>
       <li>
-        <Card type="ko" :img="img">
+        <RzCard type="ko" :img="img">
           <template slot="card-category">#Lorem</template>
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</template>
-        </Card>
+        </RzCard>
       </li>
       <li>
-        <Card type="cc" :img="img">
+        <RzCard type="cc" :img="img">
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</template>
           <template slot="card-btn">Lorem</template>
-        </Card>
+        </RzCard>
       </li>
       <li>
-        <Card type="gh" :img="img">
-        </Card>
+        <RzCard type="gh" :img="img">
+        </RzCard>
       </li>
       <li class="gh-2">
-        <Card type="gh-2">
-        </Card>
+        <RzCard type="gh-2">
+        </RzCard>
       </li>
       <li>
-        <Card type="kz" :img="img">
+        <RzCard type="kz" :img="img">
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit</template>
-        </Card>
+        </RzCard>
       </li>
       <li>
-        <Card type="md" :img="img">
+        <RzCard type="md" :img="img">
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum</template>
-        </Card>
+        </RzCard>
       </li>
     </ul>
   </div>

@@ -1,0 +1,83 @@
+@radio-prefix: ~"@{css-prefix}radio";
+
+.@{radio-prefix} {
+
+  &-lig {
+    color: #000;
+    font-size:25px;
+    position: relative;
+    margin-bottom: 25px;
+    user-select: none;
+
+    & input[type="radio"]{
+      display: none !important;
+      appearance: none;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background: #fff;
+      vertical-align: top;
+      position: relative;
+      top: -5px;
+      margin-right: 10px;
+      box-sizing: border-box;
+      border: 3px solid #999;
+      border-radius: 3px;
+      transition: border 0.3s;
+    }
+
+    & input[type="radio"]:focus {
+      outline:rgba(0,0,0,0);
+    }
+
+    & input[type="radio"]:checked{
+      border: 3px solid #000;
+    }
+
+    & input[type="radio"]:checked ~ label{
+      color: #000;
+    }
+
+    & input[type="radio"]:checked ~ label::before {
+      border: 3px solid #000;
+    }
+
+    & input[type="radio"]:checked ~ label svg circle{
+      r: 10;
+    }
+
+    & label{
+      cursor: pointer;
+      color: #999;
+      transition: color　.3s;
+    }
+
+    & label:before{
+      content : '';
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-right: 15px;
+      position: relative;
+      top: 7px;
+      border: 3px solid #999;
+      border-radius: 50%;
+    }
+
+    & svg{
+      width: 34px;
+      height: 34px;
+      left : 0px;
+      top : 7px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    & svg circle {
+      r: 0;
+      fill: black;
+      transition: all 0.3s ease;
+    }
+  }
+
+}

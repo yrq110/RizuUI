@@ -165,7 +165,7 @@
 <script>
 const prefixCls = 'rz-nav'
 export default {
-  name: 'Nav',
+  name: 'RzNav',
   props: {
     type: {
       type: String,

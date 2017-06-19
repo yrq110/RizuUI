@@ -69,7 +69,7 @@
 <script>
 const prefixCls = 'rz-anm'
 export default {
-  name: 'Anima',
+  name: 'RzAnima',
   props: {
     type: {
       type: String,

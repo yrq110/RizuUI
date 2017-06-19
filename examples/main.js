@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './app'
-import Vue from 'vue'
 import VueRouter from 'vue-router'
 import RizuUI from '../src/index'
 Vue.use(VueRouter)
@@ -16,7 +15,7 @@ const router = new VueRouter({
     },
     {
       path: '/button',
-      component:require('./routers/button.vue')
+      component: require('./routers/button.vue')
     },
     {
       path: '/card',
@@ -28,7 +27,7 @@ const router = new VueRouter({
     },
     {
       path: '/navigation-fixed-1',
-      component:require('./routers/navigation-fixed-1.vue')
+      component: require('./routers/navigation-fixed-1.vue')
     },
     {
       path: '/navigation-fixed-2',
@@ -45,6 +44,14 @@ const router = new VueRouter({
     {
       path: '/scroller',
       component: require('./routers/scroller.vue')
+    },
+    {
+      path: '/radio',
+      component: require('./routers/radio.vue')
+    },
+    {
+      path: '/checkbox',
+      component: require('./routers/checkbox.vue')
     }
   ]
 })

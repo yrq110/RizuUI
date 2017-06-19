@@ -46,7 +46,7 @@
 const prefixCls = 'rz-scroller'
 
 export default {
-  name: 'Scroller',
+  name: 'RzScroller',
   props: {
     type: {
       type: String,

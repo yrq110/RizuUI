@@ -1,10 +1,10 @@
 <template>
   <div>
     <ul class="vertical">
-      <li class="muu"><Nav type="muu"></Nav></li>
-      <li class="ct"><Nav type="ct" :list="list"></Nav></li>
-      <li class="mu"><Nav type="mu" :items="items"></Nav></li>
-      <li class="vc"><Nav type="vc" :items="items_2" style="width:100px;height:650px;"></Nav></li>
+      <li class="muu"><RzNav type="muu"></RzNav></li>
+      <li class="ct"><RzNav type="ct" :list="list"></RzNav></li>
+      <li class="mu"><RzNav type="mu" :items="items"></RzNav></li>
+      <li class="vc"><RzNav type="vc" :items="items_2" style="width:100px;height:650px;"></RzNav></li>
     </ul>
   </div>
 </template>

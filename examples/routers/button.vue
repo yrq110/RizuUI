@@ -1,15 +1,16 @@
 <template>
   <div>
     <ul>
-      <li><Button type="gh">Button</Button></li>
-      <li><Button type="ts" data-text="Button"></Button></li>
-      <li><Button type="ts-2">Button</Button></li>
-      <li><Button type="mg">Button</Button></li>
-      <li><Button type="cp">Button</Button></li>
-      <li><Button type="ep"><template slot="inner-txt">Button</template></Button></li>
-      <li><Button type="gc">Button</Button></li>
-      <li><Button type="kr"><template slot="inner-txt">Button</template></Button></li>
-      <li><Button type="ei">Button</Button></li>
+      <li><Btn type="gh">Button</Btn></li>
+      <li><RzButton type="gh">Button</RzButton></li>
+      <li><RzButton type="ts" data-text="Button"></RzButton></li>
+      <li><RzButton type="ts-2">Button</RzButton></li>
+      <li><RzButton type="mg">Button</RzButton></li>
+      <li><RzButton type="cp">Button</RzButton></li>
+      <li><RzButton type="ep"><template slot="inner-txt">Button</template></RzButton></li>
+      <li><RzButton type="gc">Button</RzButton></li>
+      <li><RzButton type="kr"><template slot="inner-txt">Button</template></RzButton></li>
+      <li><RzButton type="ei">Button</RzButton></li>
     </ul>
   </div>
 </template>

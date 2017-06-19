@@ -126,7 +126,7 @@
 <script>
 const prefixCls = 'rz-card'
 export default {
-  name: 'Card',
+  name: 'RzCard',
   props: {
     type: {
       type: String,
