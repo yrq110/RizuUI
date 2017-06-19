@@ -1,7 +1,13 @@
 <template>
   <div :class="classes">
     <slot v-if="type !== 'ep'">
-      <template v-if="type !== 'kr'">#btn</template>
+      <template v-if="type !== 'kr'">
+        <template v-if="type !== 'ace'">
+          <template v-if="type !== 'two'">
+          #btn
+          </template>
+        </template>
+      </template>
     </slot>
 
     <template v-if="type === 'cp'">
@@ -28,7 +34,17 @@
       <i></i>
     </template>
 
-    <template v-if="type === 'ei'">
+    <template v-if="type === 'ace'">
+      <span><slot name="inner-txt">ace-txt</slot></span>
+      <span><slot name="inner-txt">ace-txt</slot></span>
+    </template>
+
+    <template v-if="type === 'two'">
+      <span class="label"><slot name="inner-txt">two-txt</slot></span>
+      <span class="border-r"></span>
+      <span class="border-t"></span>
+      <span class="border-l"></span>
+      <span class="border-b"></span>
     </template>
   </div>
 </template>

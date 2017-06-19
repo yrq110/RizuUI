@@ -1,4 +1,4 @@
-@anm-prefix: ~"@{css-prefix}anm";
+@anm-prefix: ~"@{css-prefix}anima";
 @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma');
 .@{anm-prefix} {
   &-text-1 {
@@ -93,6 +93,19 @@
         stroke-dashoffset: 1160;
         stroke-dasharray: 80 160;
       }
+    }
+  }
+
+  &-rect-1 {
+    & rect {
+      fill: red;
+    }
+  }
+
+  &-rect-2 {
+    & rect {
+      fill: red;
+      opacity: 0;
     }
   }
 }

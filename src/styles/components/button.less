@@ -449,4 +449,120 @@
       transition-duration: .6s, .4s;
     }
   }
+
+  &-ace {
+    .btn;
+
+    & span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-style: solid;
+      border-width: 2px;
+      font-weight: 500;
+      transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    & span:first-child {
+      color: #fff;
+      transform-origin: 50% 50% -20px;
+      transform: rotateX(90deg);
+    }
+
+    &:hover span:first-child {
+      border-color: @btn-primary-bg-color;
+      background-color: @btn-primary-bg-color;
+      transform: rotateX(0deg);
+    }
+
+    & span:last-child {
+      border-color: @btn-primary-bg-color;
+      color: @btn-primary-bg-color;
+      transform-origin: 50% 50% -20px;
+      transform: rotateX(0deg);
+    }
+
+    &:hover span:last-child {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+  }
+
+  &-two {
+    .btn;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+
+    & > span{
+      background: black;
+    }
+
+    & .label {
+      background: inherit;
+    }
+
+    & .border-r {
+      position: absolute;
+      right: -2px;
+      bottom: 0;
+      width: 2px;
+      height: 0;
+
+    }
+
+    &:hover .border-r {
+      height: 100%;
+      transition: height .1s ease-out;
+      transition-delay: 0s;
+    }
+
+    & .border-t {
+      position: absolute;
+      top: -2px;
+      right: 0;
+      width: 0;
+      height: 2px;
+
+    }
+
+    &:hover .border-t {
+      width: 100%;
+      transition: width .1s ease-out;
+      transition-delay: .1s;
+    }
+
+    & .border-l {
+      position: absolute;
+      left: -2px;
+      top: 0;
+      width: 2px;
+      height: 0;
+    }
+
+    &:hover .border-l {
+      height: 100%;
+      transition: height .1s ease-out;
+      transition-delay: .2s;
+    }
+
+    & .border-b {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 3px;
+    }
+
+    &:hover .border-b {
+      width: 100%;
+      transition: width .1s ease-out;
+      transition-delay: .3s;
+    }
+  }
 }

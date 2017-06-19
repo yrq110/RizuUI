@@ -63,11 +63,397 @@
         <use :xlink:href="'#' + textID" class="text" :style="{stroke:textStroke[2],strokeWidth:textWidth}"></use>
       </svg>
     </template>
+
+    <template v-if="type === 'rect-1'">
+      <svg width="110" height="110" viewBox="0 0 110 110">
+        <g>
+          <rect x="0" y="0" width="30" height="30">
+            <animate id="x11" attributeName="x" begin="0s;x11.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="y11" attributeName="y" begin="0s;y11.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="w1" attributeName="width" begin="0s;w1.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h1" attributeName="height" begin="0s;h1.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="0" y="40" width="30" height="30">
+            <animate id="x21" attributeName="x" begin="0s;x21.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="y21" attributeName="y" begin="0s;y21.end+1s" dur="1s" values="40;55;40"/>
+            <animate id="w1" attributeName="width" begin="0s;w1.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h1" attributeName="height" begin="0s;h1.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="0" y="80" width="30" height="30">
+            <animate id="x31" attributeName="x" begin="0s;x31.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="y31" attributeName="y" begin="0s;y31.end+1s" dur="1s" values="80;95;80"/>
+            <animate id="w1" attributeName="width" begin="0s;w1.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h1" attributeName="height" begin="0s;h1.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+        </g>
+        <g>
+          <rect x="40" y="0" width="30" height="30">
+            <animate id="x12" attributeName="x" begin=".3s;x12.end+1s" dur="1s" values="40;55;40"/>
+            <animate id="y12" attributeName="y" begin=".3s;y12.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="w2" attributeName="width" begin=".3s;w2.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h2" attributeName="height" begin=".3s;h2.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="40" y="40" width="30" height="30">
+            <animate id="x22" attributeName="x" begin=".3s;x22.end+1s" dur="1s" values="40;55;40"/>
+            <animate id="y22" attributeName="y" begin=".3s;y22.end+1s" dur="1s" values="40;55;40" />
+            <animate id="w2" attributeName="width" begin=".3s;w2.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h2" attributeName="height" begin=".3s;h2.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="40" y="80" width="30" height="30">
+            <animate id="x32" attributeName="x" begin=".3s;x32.end+1s" dur="1s" values="40;55;40"/>
+            <animate id="y32" attributeName="y" begin=".3s;y32.end+1s" dur="1s" values="80;95;80"/>
+            <animate id="w2" attributeName="width" begin=".3s;w2.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h2" attributeName="height" begin=".3s;h2.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+        </g>
+        <g>
+          <rect x="80" y="0" width="30" height="30">
+            <animate id="x13" attributeName="x" begin=".6s;x13.end+1s" dur="1s" values="80;95;80" />
+            <animate id="y13" attributeName="y" begin=".6s;y13.end+1s" dur="1s" values="0;15;0"/>
+            <animate id="w3" attributeName="width" begin=".6s;w3.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h3" attributeName="height" begin=".6s;h3.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="80" y="40" width="30" height="30">
+            <animate id="x23" attributeName="x" begin=".6s;x23.end+1s" dur="1s" values="80;95;80"/>
+            <animate id="y23" attributeName="y" begin=".6s;y23.end+1s" dur="1s" values="40;55;40"/>
+            <animate id="w3" attributeName="width" begin=".6s;w3.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h3" attributeName="height" begin=".6s;h3.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+          <rect x="80" y="80" width="30" height="30">
+            <animate id="x33" attributeName="x" begin=".6s;x33.end+1s" dur="1s" values="80;95;80"/>
+            <animate id="y33" attributeName="y" begin=".6s;y33.end+1s" dur="1s" values="80;95;80"/>
+            <animate id="w3" attributeName="width" begin=".6s;w3.end+1s" dur="1s" values="30;0;30"/>
+            <animate id="h3" attributeName="height" begin=".6s;h3.end+1s" dur="1s" values="30;0;30"/>
+          </rect>
+        </g>
+      </svg>
+    </template>
+
+    <template v-if="type === 'rect-2'">
+      <svg width="110" height="110" viewBox="0 0 110 110">
+        <rect x="0" y="80" width="30" height="30">
+          <animateTransform id="t31" type="translate" attributeName="transform" begin="0s;t31_2.end+2.5s" dur=".3s" from="0 -20" to="0 0" fill="freeze"/>
+          <animate id="o31"
+            attributeName="opacity"
+            begin="0s;o31_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t31_2"
+            type="translate"
+            attributeName="transform"
+            begin="t31.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o31_2"
+            attributeName="opacity"
+            begin="o31.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="40" y="80" width="30" height="30">
+          <animateTransform id="t32"
+            type="translate"
+            attributeName="transform"
+            begin=".3s;t32_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o32"
+            attributeName="opacity"
+            begin=".3s;o32_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t32_2"
+            type="translate"
+            attributeName="transform"
+            begin="t32.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o32_2"
+            attributeName="opacity"
+            begin="o32.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="80" y="80" width="30" height="30">
+          <animateTransform id="t33"
+            type="translate"
+            attributeName="transform"
+            begin=".6s;t33_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o33"
+            attributeName="opacity"
+            begin=".6s;o33_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t33_2"
+            type="translate"
+            attributeName="transform"
+            begin="t33.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o33_2"
+            attributeName="opacity"
+            begin="o33.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="0" y="40" width="30" height="30">
+          <animateTransform id="t21"
+            type="translate"
+            attributeName="transform"
+            begin=".9s;t21_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o21"
+            attributeName="opacity"
+            begin=".9s;o21_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t21_2"
+            type="translate"
+            attributeName="transform"
+            begin="t21.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o21_2"
+            attributeName="opacity"
+            begin="o21.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="40" y="40" width="30" height="30">
+          <animateTransform id="t22"
+            type="translate"
+            attributeName="transform"
+            begin="1.2s;t22_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o22"
+            attributeName="opacity"
+            begin="1.2s;o22_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t22_2"
+            type="translate"
+            attributeName="transform"
+            begin="t22.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o22_2"
+            attributeName="opacity"
+            begin="o22.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="80" y="40" width="30" height="30">
+          <animateTransform id="t23"
+            type="translate"
+            attributeName="transform"
+            begin="1.5s;t23_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o23"
+            attributeName="opacity"
+            begin="1.5s;o23_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t23_2"
+            type="translate"
+            attributeName="transform"
+            begin="t23.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o23_2"
+            attributeName="opacity"
+            begin="o23.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="0" y="0" width="30" height="30">
+          <animateTransform id="t11"
+            type="translate"
+            attributeName="transform"
+            begin="1.8s;t11_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o11"
+            attributeName="opacity"
+            begin="1.8s;o11_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t11_2"
+            type="translate"
+            attributeName="transform"
+            begin="t11.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o11_2"
+            attributeName="opacity"
+            begin="o11.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="40" y="0" width="30" height="30">
+          <animateTransform id="t12"
+            type="translate"
+            attributeName="transform"
+            begin="2.1s;t12_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o12"
+            attributeName="opacity"
+            begin="2.1s;o12_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t12_2"
+            type="translate"
+            attributeName="transform"
+            begin="t12.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o12_2"
+            attributeName="opacity"
+            begin="o12.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+        <rect x="80" y="0" width="30" height="30">
+          <animateTransform id="t13"
+            type="translate"
+            attributeName="transform"
+            begin="2.4s;t13_2.end+2.5s"
+            dur=".3s"
+            from="0 -20"
+            to="0 0"
+            fill="freeze"
+          />
+          <animate id="o13"
+            attributeName="opacity"
+            begin="2.4s;o13_2.end+2.5s"
+            dur=".3s"
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+          <animateTransform id="t13_2"
+            type="translate"
+            attributeName="transform"
+            begin="t13.end+2.5s"
+            dur=".3s"
+            from="0 0"
+            to="0 20"
+            fill="freeze"
+          />
+          <animate id="o13_2"
+            attributeName="opacity"
+            begin="o13.end+2.5s"
+            dur=".3s"
+            from="1"
+            to="0"
+            fill="freeze"
+          />
+        </rect>
+      </svg>
+    </template>
   </div>
 </template>
 
 <script>
-const prefixCls = 'rz-anm'
+const prefixCls = 'rz-anima'
 export default {
   name: 'RzAnima',
   props: {

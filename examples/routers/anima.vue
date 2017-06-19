@@ -7,6 +7,8 @@
       <li><RzAnima type="text-1"><template slot="text">Rizu</template></RzAnima></li>
       <li><RzAnima type="text-1" :textStroke="textStroke" :textWidth="textWidth" :textFontFamily="textFontFamily"><template slot="text">Hello</template></RzAnima></li>
       <li><RzAnima type="text-2"><template slot="text">Rizu</template></RzAnima></li>
+      <li><RzAnima type="rect-1"></RzAnima></li>
+      <li><RzAnima type="rect-2"></RzAnima></li>
     </ul>
   </div>
 </template>
