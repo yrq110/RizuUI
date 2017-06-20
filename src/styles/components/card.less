@@ -556,4 +556,67 @@
     }
 
   }
+
+  &-og {
+
+    cursor: pointer;
+    position: relative;
+    width: 80%;
+    min-height: 200px;
+    background: grey;
+
+    & .mask {
+      position: absolute;
+      width: 0;height: 90%;
+      top: 0;left: 0;
+      transform: translate(5%,5%);
+      background: white;
+      opacity: 0;
+      transition: all 1s ease;
+      z-index: 1;
+    }
+
+    &:hover .mask{
+      opacity: 1;
+      width: 90%;
+    }
+    & .card-title {
+      position: absolute;
+      top: 50%;left: 50%;
+      font-size: 300%;
+      font-weight: bold;
+      color: white;
+      transform: translate(-50%,-50%);
+      transition: all 1s ease;
+      z-index: 2;
+    }
+
+    &:hover .card-title {
+      left: 15%;
+      font-size: 200%;
+      color: grey;
+    }
+
+
+    & .card-content {
+      max-width: 60%;
+      position: absolute;
+      top: 50%; right: 30%;
+      transform: translate(0,-50%);
+      opacity: 0;
+      font-size: 150%;
+      font-weight: bold;
+      color: grey;
+      text-align: center;
+      vertical-align: baseline;
+      transition: all 1s ease;
+      z-index: 3;
+    }
+
+    &:hover .card-content {
+      right: 10%;
+      color: black;
+      opacity: 1;
+    }
+  }
 }

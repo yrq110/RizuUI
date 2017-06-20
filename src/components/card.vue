@@ -120,6 +120,17 @@
         </div>
       </div>
     </template>
+
+    <template v-if="type === 'og'">
+      <div class="mask"></div>
+      <div class="card-title">
+        <slot name="card-title">#title</slot>
+      </div>
+      <div class="card-content">
+        <slot name="card-content">#content</slot>
+      </div>
+    </template>
+
   </div>
 </template>
 

@@ -42,6 +42,12 @@
           <template slot="card-content">Lorem ipsum</template>
         </RzCard>
       </li>
+      <li class="og">
+        <RzCard type="og" :img="img">
+          <template slot="card-title">Lorem ipsum</template>
+          <template slot="card-content">Lorem ipsum</template>
+        </RzCard>
+      </li>
     </ul>
   </div>
 </template>
@@ -70,10 +76,13 @@ ul {
 }
 li {
   list-style: none;
-  display: inline-block;
   margin: 30px;
 }
 li.gh-2 {
   height: 100px;
+}
+
+li.og {
+  width: 100vw;
 }
 </style>

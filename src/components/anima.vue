@@ -51,6 +51,19 @@
       </svg>
     </template>
 
+    <template v-if="type === 'ball-4'">
+      <svg width="100" height="100" viewBox="0 0 20 20">
+        <circle id="big" cx="10" cy="10" r="10" fill="black">
+          <animate id="big_min" attributeName="r" from="10" to="5" calcMode="spline" keyTimes="0;1" keySplines=".44 0 .76 .56" begin="0s;big_max.end" dur=".5s" fill="freeze"/>
+          <animate id="big_max" attributeName="r" from="5" to="10" calcMode="spline" keyTimes="0;1" keySplines="0 .44 .56 .76" begin="big_min.end" dur=".5s" fill="freeze"/>
+        </circle>
+        <circle id="small" cx="10" cy="10" r="0" fill="grey">
+          <animate id="small_max" attributeName="r" from="0" to="6" calcMode="spline" keyTimes="0;1" keySplines=".44 0 .76 .56" begin="0s;small_min.end" dur=".5s" fill="freeze"/>
+          <animate id="small_min" attributeName="r" from="6" to="0" calcMode="spline" keyTimes="0;1" keySplines="0 .44 .56 .76" begin="small_max.end" dur=".5s" fill="freeze"/>
+        </circle>
+      </svg>
+    </template>
+
     <template v-if="type === 'text-1' || type === 'text-2'">
       <svg viewBox="0 0 1300 300" >
         <symbol :id="textID">
@@ -133,59 +146,14 @@
       <svg width="110" height="110" viewBox="0 0 110 110">
         <rect x="0" y="80" width="30" height="30">
           <animateTransform id="t31" type="translate" attributeName="transform" begin="0s;t31_2.end+2.5s" dur=".3s" from="0 -20" to="0 0" fill="freeze"/>
-          <animate id="o31"
-            attributeName="opacity"
-            begin="0s;o31_2.end+2.5s"
-            dur=".3s"
-            from="0"
-            to="1"
-            fill="freeze"
-          />
-          <animateTransform id="t31_2"
-            type="translate"
-            attributeName="transform"
-            begin="t31.end+2.5s"
-            dur=".3s"
-            from="0 0"
-            to="0 20"
-            fill="freeze"
-          />
-          <animate id="o31_2"
-            attributeName="opacity"
-            begin="o31.end+2.5s"
-            dur=".3s"
-            from="1"
-            to="0"
-            fill="freeze"
-          />
+          <animate id="o31" attributeName="opacity" begin="0s;o31_2.end+2.5s" dur=".3s" from="0" to="1" fill="freeze" />
+          <animateTransform id="t31_2" type="translate" attributeName="transform" begin="t31.end+2.5s" dur=".3s" from="0 0" to="0 20" fill="freeze"/>
+          <animate id="o31_2" attributeName="opacity" begin="o31.end+2.5s" dur=".3s" from="1" to="0" fill="freeze"/>
         </rect>
         <rect x="40" y="80" width="30" height="30">
-          <animateTransform id="t32"
-            type="translate"
-            attributeName="transform"
-            begin=".3s;t32_2.end+2.5s"
-            dur=".3s"
-            from="0 -20"
-            to="0 0"
-            fill="freeze"
-          />
-          <animate id="o32"
-            attributeName="opacity"
-            begin=".3s;o32_2.end+2.5s"
-            dur=".3s"
-            from="0"
-            to="1"
-            fill="freeze"
-          />
-          <animateTransform id="t32_2"
-            type="translate"
-            attributeName="transform"
-            begin="t32.end+2.5s"
-            dur=".3s"
-            from="0 0"
-            to="0 20"
-            fill="freeze"
-          />
+          <animateTransform id="t32" type="translate" attributeName="transform" begin=".3s;t32_2.end+2.5s" dur=".3s" from="0 -20" to="0 0" fill="freeze"/>
+          <animate id="o32" attributeName="opacity" begin=".3s;o32_2.end+2.5s" dur=".3s" from="0" to="1" fill="freeze"/>
+          <animateTransform id="t32_2" type="translate" attributeName="transform" begin="t32.end+2.5s" dur=".3s" from="0 0" to="0 20" fill="freeze"/>
           <animate id="o32_2"
             attributeName="opacity"
             begin="o32.end+2.5s"
@@ -368,10 +336,8 @@
           />
           <animate id="o11_2"
             attributeName="opacity"
-            begin="o11.end+2.5s"
-            dur=".3s"
-            from="1"
-            to="0"
+            begin="o11.end+2.5s" dur=".3s"
+            from="1" to="0"
             fill="freeze"
           />
         </rect>
@@ -379,35 +345,27 @@
           <animateTransform id="t12"
             type="translate"
             attributeName="transform"
-            begin="2.1s;t12_2.end+2.5s"
-            dur=".3s"
-            from="0 -20"
-            to="0 0"
+            begin="2.1s;t12_2.end+2.5s" dur=".3s"
+            from="0 -20" to="0 0"
             fill="freeze"
           />
           <animate id="o12"
             attributeName="opacity"
-            begin="2.1s;o12_2.end+2.5s"
-            dur=".3s"
-            from="0"
-            to="1"
+            begin="2.1s;o12_2.end+2.5s" dur=".3s"
+            from="0" to="1"
             fill="freeze"
           />
           <animateTransform id="t12_2"
             type="translate"
             attributeName="transform"
-            begin="t12.end+2.5s"
-            dur=".3s"
-            from="0 0"
-            to="0 20"
+            begin="t12.end+2.5s" dur=".3s"
+            from="0 0" to="0 20"
             fill="freeze"
           />
           <animate id="o12_2"
             attributeName="opacity"
-            begin="o12.end+2.5s"
-            dur=".3s"
-            from="1"
-            to="0"
+            begin="o12.end+2.5s" dur=".3s"
+            from="1" to="0"
             fill="freeze"
           />
         </rect>
@@ -415,36 +373,25 @@
           <animateTransform id="t13"
             type="translate"
             attributeName="transform"
-            begin="2.4s;t13_2.end+2.5s"
-            dur=".3s"
-            from="0 -20"
-            to="0 0"
+            begin="2.4s;t13_2.end+2.5s" dur=".3s"
+            from="0 -20" to="0 0"
             fill="freeze"
           />
           <animate id="o13"
             attributeName="opacity"
-            begin="2.4s;o13_2.end+2.5s"
-            dur=".3s"
-            from="0"
-            to="1"
+            begin="2.4s;o13_2.end+2.5s" dur=".3s"
+            from="0" to="1"
             fill="freeze"
           />
           <animateTransform id="t13_2"
             type="translate"
             attributeName="transform"
-            begin="t13.end+2.5s"
-            dur=".3s"
-            from="0 0"
-            to="0 20"
+            begin="t13.end+2.5s" dur=".3s"
+            from="0 0" to="0 20"
             fill="freeze"
           />
-          <animate id="o13_2"
-            attributeName="opacity"
-            begin="o13.end+2.5s"
-            dur=".3s"
-            from="1"
-            to="0"
-            fill="freeze"
+          <animate id="o13_2" attributeName="opacity" begin="o13.end+2.5s"
+            dur=".3s" from="1" to="0" fill="freeze"
           />
         </rect>
       </svg>

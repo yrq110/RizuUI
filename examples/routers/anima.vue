@@ -4,6 +4,7 @@
       <li><RzAnima type="ball-1"></RzAnima></li>
       <li><RzAnima type="ball-2"></RzAnima></li>
       <li><RzAnima type="ball-3"></RzAnima></li>
+      <li><RzAnima type="ball-4"></RzAnima></li>
       <li><RzAnima type="text-1"><template slot="text">Rizu</template></RzAnima></li>
       <li><RzAnima type="text-1" :textStroke="textStroke" :textWidth="textWidth" :textFontFamily="textFontFamily"><template slot="text">Hello</template></RzAnima></li>
       <li><RzAnima type="text-2"><template slot="text">Rizu</template></RzAnima></li>
@@ -27,4 +28,9 @@ export default {
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+li {
+  list-style: none;
+  margin: 30px;
+}
 </style>
