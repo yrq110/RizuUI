@@ -1,11 +1,11 @@
 <template>
   <div :class="classes">
     <template v-if="type === 'lig'">
-      <input type="radio" :id="id" :name="name"/>
+      <input type="radio" :id="id" :name="name" :value="value"/>
       <label :for="id">
         <slot></slot>
         <svg viewBox="0 0 32 32">
-          <circle cx="16" cy="16" r="0"/>
+          <circle cx="16" cy="16" r="10"/>
         </svg>
       </label>
     </template>

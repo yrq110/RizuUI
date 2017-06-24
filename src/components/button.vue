@@ -1,5 +1,5 @@
 <template>
-  <div :class="classes">
+  <div :class="classes" @click="handleClick">
     <slot v-if="type !== 'ep'">
       <template v-if="type !== 'kr'">
         <template v-if="type !== 'ace'">
@@ -63,6 +63,11 @@ export default {
   computed: {
     classes () {
       return `${prefixCls}-${this.type}`
+    }
+  },
+  methods: {
+    handleClick (evt) {
+      this.$emit('click', evt)
     }
   }
 }

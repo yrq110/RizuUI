@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li><RzButton type="gh">Button</RzButton></li>
+      <li><RzButton type="gh" @click="btnClick">Button</RzButton></li>
       <li><RzButton type="ts" data-text="Button"></RzButton></li>
       <li><RzButton type="ts-2">Button</RzButton></li>
       <li><RzButton type="mg">Button</RzButton></li>
@@ -18,6 +18,11 @@
 
 <script>
 export default {
+  methods: {
+    btnClick (evt) {
+      console.log('click event:' + evt)
+    }
+  }
 }
 </script>
 
