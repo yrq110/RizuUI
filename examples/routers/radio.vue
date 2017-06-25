@@ -1,13 +1,21 @@
 <template>
   <div class="rd">
-    <RzRadio id="apple" name="fruit">Apple</RzRadio>
-    <RzRadio id="banana" name="fruit">Banana</RzRadio>
-    <RzRadio id="orange" name="fruit">Orange</RzRadio>
+    <!--<RzRadio name="fruit" label="Apple" v-model="sel">Apple</RzRadio>
+    <RzRadio name="fruit" label="Banana" v-model="sel">Banana</RzRadio>
+    <RzRadio name="fruit" label="Orange" v-model="sel">Orange</RzRadio>-->
+    <RzRadio name="fruit" label="Apple" v-model="sel">Apple</RzRadio>
+    <RzRadio name="fruit" label="Banana" v-model="sel">Banana</RzRadio>
+    <RzRadio name="fruit" label="Orange" v-model="sel">Orange</RzRadio>
+    <span>Picked: {{ sel }}</span>
   </div>
 </template>
 <script>
 export default {
-
+  data () {
+    return {
+      sel: 'Banana'
+    }
+  }
 }
 </script>
 <style scoped>

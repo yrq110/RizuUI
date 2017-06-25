@@ -1,8 +1,8 @@
 <template>
   <div :class="classes">
     <template v-if="type === 'lig'">
-      <input type="radio" :id="id" :name="name" :value="value"/>
-      <label :for="id">
+      <input type="radio" :id="label" :name="name" :value="label" v-model="model"/>
+      <label :for="label">
         <slot></slot>
         <svg viewBox="0 0 32 32">
           <circle cx="16" cy="16" r="10"/>
@@ -22,17 +22,24 @@ export default {
       default: 'lig'
     },
     name: {
-      type: String,
-      default: 'radio_name'
+      type: String
     },
-    id: {
-      type: String,
-      default: 'radio_id'
-    }
+    label: {},
+    value: {}
   },
   computed: {
     classes () {
       return `${prefixCls}-${this.type}`
+    },
+    model: {
+      get () {
+        console.log(this.value)
+        return this.value
+      },
+      set (val) {
+        console.log('set value: ' + val)
+        this.$emit('input', val)
+      }
     }
   }
 }
