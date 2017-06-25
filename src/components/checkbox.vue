@@ -22,10 +22,11 @@ export default {
       default: 'lig'
     },
     name: {
-      type: String,
-      default: 'checkbox_name'
+      type: String
     },
-    label: {},
+    label: {
+      required: true
+    },
     value: {}
   },
   computed: {

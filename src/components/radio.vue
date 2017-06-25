@@ -22,9 +22,12 @@ export default {
       default: 'lig'
     },
     name: {
-      type: String
+      type: String,
+      required: true
     },
-    label: {},
+    label: {
+      required: true
+    },
     value: {}
   },
   computed: {
