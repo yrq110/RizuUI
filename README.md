@@ -34,23 +34,27 @@ NPM
 ```bash
 npm install rizu-ui --save
 ```
+
 CDN
 ```html
-<script src="//vuejs.org/js/vue.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//unpkg.com/dist/styles/rizuui.css">
-<script type="text/javascript" src="//unpkg.com/rizu-ui/dist/rizuui.min.js"></script>
+<script src="https://vuejs.org/js/vue.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/dist/styles/rizuui.css">
+<script type="text/javascript" src="https://unpkg.com/rizu-ui/dist/rizuui.min.js"></script>
 ```
 
 ## Usage
 
 Import all
+
 ```js
 import { RizuUI } from 'rizu-ui';
 import 'rizu-ui/dist/styles/rizuui.css'
 
 Vue.use(RizuUI);
 ```
+
 Import components
+
 ```js
 import { component } from 'rizu-ui'
 Vue.component(component.name, component);
@@ -58,6 +62,7 @@ Vue.component(component.name, component);
 > When import components you should also import css file.
 
 Use components
+
 ```html
 <template>
     <RzButton type='gh'>Hello</RzButton>

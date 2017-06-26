@@ -43,7 +43,7 @@
         </RzCard>
       </li>
       <li class="og">
-        <RzCard type="og" :img="img">
+        <RzCard type="og" :mainColor="mainColor">
           <template slot="card-title">Lorem ipsum</template>
           <template slot="card-content">Lorem ipsum</template>
         </RzCard>
@@ -57,7 +57,8 @@ export default {
   data() {
     return {
       img: 'http://opctl018t.bkt.clouddn.com/dva.jpg',
-      img2: 'http://opctl018t.bkt.clouddn.com/hori.jpg'
+      img2: 'http://opctl018t.bkt.clouddn.com/hori.jpg',
+      mainColor: '#00ff00'
     }
   }
 }

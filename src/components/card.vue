@@ -150,7 +150,8 @@ export default {
     img2: {
       type: String,
       default: 'http://opctl018t.bkt.clouddn.com/hori.jpg'
-    }
+    },
+    mainColor: {}
   },
   computed: {
     classes () {
