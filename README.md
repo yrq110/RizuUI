@@ -52,7 +52,7 @@ Import all
 import RizuUI from 'rizu-ui'
 import 'rizu-ui/dist/styles/rizuui.css'
 
-Vue.use(RizuUI);
+Vue.use(RizuUI)
 ```
 
 Import components
