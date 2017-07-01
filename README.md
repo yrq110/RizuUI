@@ -49,7 +49,7 @@ CDN
 Import all
 
 ```js
-import RizuUI from 'rizu-ui';
+import RizuUI from 'rizu-ui'
 import 'rizu-ui/dist/styles/rizuui.css'
 
 Vue.use(RizuUI);
@@ -59,7 +59,7 @@ Import components
 
 ```js
 import { component } from 'rizu-ui'
-Vue.component(component.name, component);
+Vue.component(component.name, component)
 ```
 > When import components you should also import css file.
 
