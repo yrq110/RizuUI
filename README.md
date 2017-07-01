@@ -27,6 +27,8 @@ still working...
 * Card
 * Navigation
 * Hint
+* Radio
+* Checkbox
 
 ## Install
 
@@ -47,7 +49,7 @@ CDN
 Import all
 
 ```js
-import { RizuUI } from 'rizu-ui';
+import RizuUI from 'rizu-ui';
 import 'rizu-ui/dist/styles/rizuui.css'
 
 Vue.use(RizuUI);
