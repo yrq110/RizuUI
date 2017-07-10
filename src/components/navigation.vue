@@ -34,8 +34,8 @@
     </template>
 
     <template v-if="type == 'mu'">
-      <div class="main">
-      </div>
+      <!--<div class="main">
+      </div>-->
       <div class="nav">
         <nav>
           <div class="cate" v-for="item in items">

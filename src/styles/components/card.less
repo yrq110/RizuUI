@@ -4,9 +4,9 @@
 
   &-mf {
     position: relative;
-    width: 300px; height: 600px;
+    width: 18.75rem; height: 37.5rem;
     cursor: pointer;
-    border: 2px solid black;
+    border: 0.125rem solid black;
     text-align: center;
 
     & .card-image {
@@ -32,7 +32,7 @@
     }
 
     & .card-content .card-title{
-      margin: 20px auto;
+      margin: 1.25rem auto;
       font-weight: bold;
       font-size: @font-size-large;
       color: rgb(189,91,90);
@@ -41,16 +41,16 @@
     & .card-content .para{
       font-size: @font-size-small;
       line-height: 1.4;
-      margin: 0 10px;
+      margin: 0 0.625rem;
     }
 
 
     & .card-button {
       position: absolute;
       top: 100%;left: 50%;
-      width: 60px; height: 60px;
+      width: 3.75rem; height: 3.75rem;
       transform: translate(-50%,-50%);
-      border-radius: 30px;
+      border-radius: 1.875rem;
       background: rgb(68,19,22);
     }
 
@@ -61,18 +61,18 @@
 
     @keyframes symbolmove {
       0%,100% {
-        transform: translateX(-3px);
+        transform: translateX(-0.1875rem);
       }
 
       50% {
-        transform: translateX(3px);
+        transform: translateX(0.1875rem);
       }
     }
   }
 
   &-ko {
     position: relative;
-    width: 400px; height: 600px;
+    width: 25rem; height: 37.5rem;
     background: red;
 
     & .card-content {
@@ -85,15 +85,15 @@
     }
 
     &:hover .card-content {
-      transform: translate(-10px,-10px);
+      transform: translate(-0.625rem,-0.625rem);
     }
 
     & .card-content .category {
       display: inline-block;
       position: absolute;
       left: 10%; top: -2%;
-      width: 100px;
-      padding: 5px 0;
+      width: 6.25rem;
+      padding: 0.3125rem 0;
       background: black;
       color: white;
       text-align: center;
@@ -130,7 +130,7 @@
       display: block;
       position: relative;
       cursor: pointer;
-      width: 240px;height: 360px;
+      width: 15rem; height: 22.5rem;
       background-image: url(@sample-img);
       background-position: center;
       background-size: cover;
@@ -142,13 +142,13 @@
 
     & .card-content:before {
       position: absolute;
-      top: 2px;
-      left: 2px;
+      top: 0.125rem;
+      left: 0.125rem;
       right: 70%;
       bottom: 70%;
       content: "";
-      border-top: transparent 1px solid;
-      border-left: transparent 1px solid;
+      border-top: transparent 0.0625rem solid;
+      border-left: transparent 0.0625rem solid;
       transition: all 0.3s ease;
     }
 
@@ -156,38 +156,38 @@
       position: absolute;
       top: 70%;
       left: 70%;
-      right: 2px;
-      bottom: 2px;
+      right: 0.125rem;
+      bottom: 0.125rem;
       content: "";
-      border-bottom: transparent 1px solid;
-      border-right: transparent 1px solid;
+      border-bottom: transparent 0.0625rem solid;
+      border-right: transparent 0.0625rem solid;
       transition: all 0.5s ease;
     }
 
     & .card-content:hover {
-      transform: translateY(-5px);
+      transform: translateY(-0.3125rem);
     }
 
     & .card-content:hover:before {
-      right: 2px;
-      bottom: 2px;
-      border-top: white 1px solid;
-      border-left: white 1px solid;
+      right: 0.125rem;
+      bottom: 0.125rem;
+      border-top: white 0.0625rem solid;
+      border-left: white 0.0625rem solid;
     }
 
     & .card-content:hover:after {
-      top: 2px;
-      left: 2px;
-      border-bottom: white 1px solid;
-      border-right: white 1px solid;
+      top: 0.125rem;
+      left: 0.125rem;
+      border-bottom: white 0.0625rem solid;
+      border-right: white 0.0625rem solid;
     }
 
     & .card-content .text {
       position: absolute;
-      top: -20px;right: 0;left: 0;
+      top: -1.25rem;right: 0;left: 0;
       text-align: center;
       font-weight: bolder;
-      letter-spacing: 3px;
+      letter-spacing: 0.1875rem;
     }
 
     & .card-content .text span {
@@ -221,11 +221,11 @@
 
     @keyframes up-down {
       0%, 100%{
-        transform: translateY(0px);
+        transform: translateY(0);
       }
 
       50% {
-        transform: translateY(-5px);
+        transform: translateY(-0.3125rem);
       }
     }
   }
@@ -233,14 +233,14 @@
   &-cc {
 
     position: relative;
-    width: 400px; height: 600px;
+    width: 25rem; height: 37.5rem;
     background: white;
 
     & .container {
       position: relative;
       height: 85%; width: 90%;
       margin: 5% 5% 0;
-      box-shadow: 0 0 20px rgba(32,14,17,.15);
+      box-shadow: 0 0 1.25rem rgba(32,14,17,.15);
     }
 
     & .container .image{
@@ -259,8 +259,8 @@
       position: absolute;
       top: 100%;left: 50%;
       transform: translateY(-50%) translateX(-50%);
-      width: 70px; height: 70px;
-      border-radius: 35px;
+      width: 4.375rem; height: 4.375rem;
+      border-radius: 2.1875rem;
       background: #ff8c85;
     }
 
@@ -268,25 +268,25 @@
       position: relative;
       left: 0;
       height: 40%;
-      padding: 0 30px;
+      padding: 0 1.875rem;
       text-align: center;
       font-family:@font-family;
     }
 
     & .container .card-content h5 {
-      margin: 40px 0 0;
+      margin: 2.5rem 0 0;
       font-family: greycliff-bold;
       font-weight: 400;
       font-size: 200%;
-      letter-spacing: 2px;
+      letter-spacing: 0.125rem;
       line-height: 1;
       text-transform: uppercase;
     }
 
     & .container .card-content h5:after {
       content: "";
-      width: 40px;
-      height: 1px;
+      width: 2.5rem;
+      height: 0.0625rem;
       background-color: #cdcdcd;
       position: relative;
       display: block;
@@ -312,7 +312,7 @@
       color: white;
       font-weight: bold;
       font-size: 80%;
-      letter-spacing: 3px;
+      letter-spacing: 0.1875rem;
     }
 
     & .container .card-content .btn:before {
@@ -321,19 +321,19 @@
       position: absolute;
       top: 0;left: 0;right: 0;bottom: 0;
       transition: all .3s ease;
-      box-shadow: 0 0 20px rgba(32,14,17,.3);
+      box-shadow: 0 0 1.25rem rgba(32,14,17,.3);
     }
 
     & .container .card-content .btn:after {
       z-index: -2;
       content: '';
       position: absolute;
-      top: -10px;left: -10px;right: -10px;bottom: -10px;
+      top: -0.625rem;left: -0.625rem;right: -0.625rem;bottom: -0.625rem;
       background-image: linear-gradient(127deg,#ff79a2 -35%,#ff9f68 130%);
     }
 
     & .card-content .btn:hover:before {
-      top: -10px;left: -10px;right: -10px;bottom: -10px;
+      top: -0.625rem;left: -0.625rem;right: -0.625rem;bottom: -0.625rem;
     }
 
     & .card-content .btn .icon {
@@ -356,7 +356,7 @@
       content: "";
       position: absolute;
       top: 50%;left: 0;
-      width: 1px;
+      width: 0.0625rem;
       height: 80%;
       background-color: hsla(0,0%,100%,.3);
       transform: translateY(-50%);
@@ -386,7 +386,7 @@
     cursor: pointer;
     overflow: hidden;
 
-    width: 540px; height: 360px;
+    width: 33.75rem; height: 22.5rem;
 
     & img {
       width: 100%;
@@ -407,12 +407,12 @@
 
       background: #ff8c85 url('data:image/svg+xml,\
         <svg xmlns="http://www.w3.org/2000/svg" \
-           width="100px" height="100px" \
+           width="6.25rem" height="6.25rem" \
            fill-opacity=".15"> \
         <rect x="50" width="50" height="50" /> \
         <rect y="50" width="50" height="50" /> \
         </svg>');
-      background-size: 30px 30px;
+      background-size: 1.875rem 1.875rem;
     }
 
     &:hover .overlay {
@@ -436,7 +436,7 @@
   &-kz {
 
     position: relative;
-    width: 400px; height: 400px;
+    width: 25rem; height: 25rem;
     background: red;
     cursor: pointer;
 
@@ -486,8 +486,8 @@
       color: white;
       // font-size: 150%;
       font-size: @font-size-larger;
-      padding: 20px;
-      padding-top: 130px;
+      padding: 1.25rem;
+      padding-top: 8.125rem;
       transition: all .3s ease;
     }
 
@@ -498,7 +498,7 @@
     & .container .icon {
       position: absolute;
       bottom: 20%; left: 30%;
-      width: 40px;height: 40px;
+      width: 2.5rem;height: 2.5rem;
       background: transparent;
       opacity: 0;
       transition: all .3s ease;
@@ -513,7 +513,7 @@
   &-md {
 
     position: relative;
-    width: 600px; height: 400px;
+    width: 37.5rem; height: 25rem;
 
     & .image {
       position: absolute;
@@ -525,7 +525,7 @@
 
     & .overlay {
       position: absolute;
-      top: 5px;bottom: 5px;left: 5px;right: 5px;
+      top: 0.3125rem;bottom: 0.3125rem;left: 0.3125rem;right: 0.3125rem;
       background: white;
       z-index: 2;
       opacity: 0;
@@ -562,7 +562,7 @@
     cursor: pointer;
     position: relative;
     width: 80%;
-    min-height: 200px;
+    min-height: 12.5rem;
     background: grey;
 
     & .mask {
@@ -622,7 +622,7 @@
       opacity: 1;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5rem) {
       & .mask {
         display: none;
       }

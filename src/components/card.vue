@@ -14,8 +14,8 @@
       </div>
       <div class="card-button">
         <svg width="60" height="60" viewBox="0 0 60 60">
-          <polyline points="30,18 42,30 30,42" stroke-width="3" stroke="rgb(241,221,229)" />
-          <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)" />
+          <polyline points="30,18 42,30 30,42" stroke-width="3" stroke="rgb(241,221,229)" fill="none"/>
+          <line x1="18" y1="30" x2="42" y2="30" stroke-width="3" stroke="rgb(241,221,229)"/>
         </svg>
       </div>
     </template>

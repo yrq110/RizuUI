@@ -10,6 +10,7 @@
       <li><RzAnima type="text-2"><template slot="text">Rizu</template></RzAnima></li>
       <li><RzAnima type="rect-1"></RzAnima></li>
       <li><RzAnima type="rect-2"></RzAnima></li>
+      <li><RzAnima type="rect-3"></RzAnima></li>
     </ul>
   </div>
 </template>

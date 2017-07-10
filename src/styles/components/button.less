@@ -25,7 +25,7 @@
       right: 0;top: 0;left: 0;
       border-bottom: @btn-primary-bg-color 0.125rem solid;
       transition: all 0.5s ease;
-      transform: translate(101%,0px);
+      transform: translate(101%,0rem);
     }
 
     &:hover {
@@ -33,11 +33,11 @@
     }
 
     &:hover:before {
-      transform: translate(0px,0px);
+      transform: translate(0,0);
     }
 
     &:hover:after {
-      transform: translate(0px,0px);
+      transform: translate(0,0);
     }
   }
 
@@ -45,7 +45,7 @@
     .btn;
 
     overflow: hidden;
-    border: 5px solid @btn-primary-bg-color;
+    border: 0.3125rem solid @btn-primary-bg-color;
     font-size: 120%;
     font-weight: bold;
 
@@ -299,7 +299,7 @@
 
     .btn;
 
-    border: 2px @btn-primary-bg-color solid;
+    border: 0.125rem @btn-primary-bg-color solid;
     background: @btn-primary-bg-color;
     color: @btn-txt-color;
     overflow: hidden;
@@ -323,32 +323,32 @@
     }
 
     &:before {
-      right: 16px;
-      width: 3px;
-      height: 5px;
-      margin-top: -5px;
-      border-top: 3px solid @btn-txt-color;
-      border-bottom: 3px solid @btn-txt-color;
+      right: 1rem;
+      width: 0.1875rem;
+      height: 0.3125rem;
+      margin-top: -0.3125rem;
+      border-top: 0.1875rem solid @btn-txt-color;
+      border-bottom: 0.1875rem solid @btn-txt-color;
     }
 
     &:hover:before {
       border-top-color: @btn-primary-bg-color;
       border-bottom-color: @btn-primary-bg-color;
-      transform: translateX(4px);
+      transform: translateX(0.25rem);
       transition-delay: .5s;
     }
 
     &:after {
-      right: 12px;
-      width: 3px;
-      height: 3px;
-      margin-top: -1px;
-      border-right: 3px solid @btn-txt-color;
+      right: 0.75rem;
+      width: 0.1875rem;
+      height: 0.1875rem;
+      margin-top: -0.0625rem;
+      border-right: 0.1875rem solid @btn-txt-color;
     }
 
     &:hover:after {
       border-right-color: @btn-primary-bg-color;
-      transform: translateX(4px);
+      transform: translateX(0.25rem);
       transition-delay: .6s;
     }
 
@@ -357,7 +357,7 @@
       position: relative;
       z-index: 2;
       overflow: hidden;
-      letter-spacing: 1px;
+      letter-spacing: 0.0625rem;
     }
 
     & i:before, & i:after {
@@ -377,19 +377,19 @@
 
     @keyframes l {
       0% {
-        left:12%;top:-12px;width:12px;height:12px;
+        left:12%;top:-0.75rem;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.6,.04,.98,.335)
       }
       20% {
-        left:12%;top:36%;width:12px;height:12px;
+        left:12%;top:36%;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.455,.03,.515,.955)
       }
       70%{
-        left:38%;top:36%;width:12px;height:12px;
+        left:38%;top:36%;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.075,.82,.165,1)
       }
       80% {
-        left:48%;top:0;width:1px;height:101%;
+        left:48%;top:0;width:0.0625rem;height:101%;
         animation-timing-function:cubic-bezier(.075,.82,.165,1)
       }
       to {
@@ -400,19 +400,19 @@
 
     @keyframes r {
       0% {
-        right:12%;top:101%;width:12px;height:12px;
+        right:12%;top:101%;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.6,.04,.98,.335)
       }
       20% {
-        right:12%;top:36%;width:12px;height:12px;
+        right:12%;top:36%;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.455,.03,.515,.955)
       }
       70% {
-        right:38%;top:36%;width:12px;height:12px;
+        right:38%;top:36%;width:0.75rem;height:0.75rem;
         animation-timing-function:cubic-bezier(.075,.82,.165,1)
       }
       80% {
-        right:48%;top:0;width:1px;height:101%;
+        right:48%;top:0;width:0.0625rem;height:101%;
         animation-timing-function:cubic-bezier(.075,.82,.165,1)
       }
       to
@@ -434,16 +434,16 @@
       content: '';
       display: block;
       position: absolute;
-      bottom: 2px;left: 0;
-      width: 100%; height: 2px;
+      bottom: 0.125rem;left: 0;
+      width: 100%; height: 0.125rem;
       background: @btn-primary-bg-color;
       opacity: 0;
-      transform: translateY(3px) scaleX(.8) skewY(6deg);
+      transform: translateY(0.1875rem) scaleX(.8) skewY(6deg);
       transition: transform .6s cubic-bezier(.23,1,.32,1),opacity .2s cubic-bezier(.23,1,.32,1);
     }
 
     &:hover:after {
-      bottom: 5px;
+      bottom: 0.3125rem;
       opacity: 1;
       transform: translateY(0) scaleX(1) skewY(0);
       transition-duration: .6s, .4s;
@@ -459,14 +459,14 @@
       width: 100%;
       height: 100%;
       border-style: solid;
-      border-width: 2px;
+      border-width: 0.125rem;
       font-weight: 500;
       transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     & span:first-child {
       color: #fff;
-      transform-origin: 50% 50% -20px;
+      transform-origin: 50% 50% -1.25rem;
       transform: rotateX(90deg);
     }
 
@@ -479,7 +479,7 @@
     & span:last-child {
       border-color: @btn-primary-bg-color;
       color: @btn-primary-bg-color;
-      transform-origin: 50% 50% -20px;
+      transform-origin: 50% 50% -1.25rem;
       transform: rotateX(0deg);
     }
 
@@ -497,7 +497,7 @@
     justify-content: center;
     position: relative;
     background: white;
-    border: 2px solid rgba(0, 0, 0, 0.25);
+    border: 0.125rem solid rgba(0, 0, 0, 0.25);
 
     & > span{
       background: black;
@@ -509,9 +509,9 @@
 
     & .border-r {
       position: absolute;
-      right: -2px;
+      right: -0.125rem;
       bottom: 0;
-      width: 2px;
+      width: 0.125rem;
       height: 0;
 
     }
@@ -524,10 +524,10 @@
 
     & .border-t {
       position: absolute;
-      top: -2px;
+      top: -0.125rem;
       right: 0;
       width: 0;
-      height: 2px;
+      height: 0.125rem;
 
     }
 
@@ -539,9 +539,9 @@
 
     & .border-l {
       position: absolute;
-      left: -2px;
+      left: -0.125rem;
       top: 0;
-      width: 2px;
+      width: 0.125rem;
       height: 0;
     }
 
@@ -553,10 +553,10 @@
 
     & .border-b {
       position: absolute;
-      bottom: -2px;
+      bottom: -0.125rem;
       left: 0;
       width: 0;
-      height: 3px;
+      height: 0.1875rem;
     }
 
     &:hover .border-b {

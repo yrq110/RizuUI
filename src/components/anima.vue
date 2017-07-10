@@ -154,14 +154,7 @@
           <animateTransform id="t32" type="translate" attributeName="transform" begin=".3s;t32_2.end+2.5s" dur=".3s" from="0 -20" to="0 0" fill="freeze"/>
           <animate id="o32" attributeName="opacity" begin=".3s;o32_2.end+2.5s" dur=".3s" from="0" to="1" fill="freeze"/>
           <animateTransform id="t32_2" type="translate" attributeName="transform" begin="t32.end+2.5s" dur=".3s" from="0 0" to="0 20" fill="freeze"/>
-          <animate id="o32_2"
-            attributeName="opacity"
-            begin="o32.end+2.5s"
-            dur=".3s"
-            from="1"
-            to="0"
-            fill="freeze"
-          />
+          <animate id="o32_2" attributeName="opacity" begin="o32.end+2.5s" dur=".3s" from="1" to="0" fill="freeze"/>
         </rect>
         <rect x="80" y="80" width="30" height="30">
           <animateTransform id="t33"
@@ -362,37 +355,38 @@
             from="0 0" to="0 20"
             fill="freeze"
           />
-          <animate id="o12_2"
-            attributeName="opacity"
-            begin="o12.end+2.5s" dur=".3s"
-            from="1" to="0"
-            fill="freeze"
-          />
+          <animate id="o12_2" attributeName="opacity" begin="o12.end+2.5s" dur=".3s" from="1" to="0" fill="freeze"/>
         </rect>
         <rect x="80" y="0" width="30" height="30">
-          <animateTransform id="t13"
-            type="translate"
-            attributeName="transform"
-            begin="2.4s;t13_2.end+2.5s" dur=".3s"
-            from="0 -20" to="0 0"
-            fill="freeze"
+          <animateTransform id="t13" type="translate" attributeName="transform" begin="2.4s;t13_2.end+2.5s" dur=".3s" from="0 -20" to="0 0" fill="freeze"
           />
-          <animate id="o13"
-            attributeName="opacity"
-            begin="2.4s;o13_2.end+2.5s" dur=".3s"
-            from="0" to="1"
-            fill="freeze"
+          <animate id="o13" attributeName="opacity" begin="2.4s;o13_2.end+2.5s" dur=".3s" from="0" to="1" fill="freeze"
           />
-          <animateTransform id="t13_2"
-            type="translate"
-            attributeName="transform"
-            begin="t13.end+2.5s" dur=".3s"
-            from="0 0" to="0 20"
-            fill="freeze"
+          <animateTransform id="t13_2" type="translate" attributeName="transform" begin="t13.end+2.5s" dur=".3s" from="0 0" to="0 20" fill="freeze"
           />
-          <animate id="o13_2" attributeName="opacity" begin="o13.end+2.5s"
-            dur=".3s" from="1" to="0" fill="freeze"
+          <animate id="o13_2" attributeName="opacity" begin="o13.end+2.5s" dur=".3s" from="1" to="0" fill="freeze"
           />
+        </rect>
+
+      </svg>
+    </template>
+
+    <template v-if="type === 'rect-3'">
+      <svg width="110" height="40" viewBox="0 0 110 40">
+        <rect x="0" y="0" width="30" height="40" rx="10" ry="10">
+          <animate attributeName="opacity" values="1;.5;1" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="height" values="40;20;40" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="y" values="0;10;0" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+        </rect>
+        <rect x="40" y="0" width="30" height="30" rx="10" ry="10">
+          <animate attributeName="opacity" values="1;.5;1" begin=".2s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="height" values="40;20;40" begin=".2s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="y" values="0;10;0" begin=".2s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+        </rect>
+        <rect x="80" y="0" width="30" height="30" rx="10" ry="10">
+          <animate attributeName="opacity" values="1;.5;1" begin=".4s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="height" values="40;20;40" begin=".4s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+          <animate attributeName="y" values="0;10;0" begin=".4s" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
         </rect>
       </svg>
     </template>

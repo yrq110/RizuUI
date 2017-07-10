@@ -5,7 +5,7 @@
 
     & nav {
       text-align: center;
-      max-width: 100px;
+      max-width: 6.25rem;
       overflow: hidden;
     }
 
@@ -13,9 +13,9 @@
       display:block;
       position: relative;
       list-style: none;
-      margin: 0;padding: 5px;
-      border: 5px solid;
-      border-width: 5px 5px 5px 0;
+      margin: 0;padding: 0.3125rem;
+      border: 0.3125rem solid;
+      border-width: 0.3125rem 0.3125rem 0.3125rem 0;
     }
 
     & li {
@@ -35,66 +35,44 @@
     & span {
       position: relative;
       display: block;
-      margin-top: -5px;
+      margin-top: -0.3125rem;
       color: black;
-      transform: translateX(-100px);
+      transform: translateX(-6.25rem);
     }
     & nav:not(:hover) span {
       transition: .3s transform;
-      transform: translateX(-100px);
+      transform: translateX(-6.25rem);
     }
 
     & nav:hover span {
-      transform: translateX(0px);
+      transform: translateX(0);
       transition: 0.3s transform;
     }
-    // & .span-in {
-    //   transform: translateX(0px);
-    //   transition: 0.3s transform;
-    // }
-    //
-    //
-    // & .span-out {
-    //   transform: translateX(-100px);
-    //   transition: 0.3s transform;
-    // }
 
     & a:hover {
-      transform: translateY(5px);
+      transform: translateY(0.3125rem);
       transition: 0.3s transform;
     }
 
     & a:not(:hover) {
-      transform: translateY(0px);
+      transform: translateY(0);
       transition: 0.3s transform;
     }
   }
 
   &-mu {
 
-    position: relative;
-    width: 100%;height: 100%;
-
-    & .main {
-      position: absolute;
-      top: 0;left: 50px;bottom: 0;right: 0;
-      transition: all 0.3s ease;
-      background-image: url(@sample-img);
-      background-size: cover;
-      color: white; font-weight: bold; padding-left: 10px;
-    }
-
     & .nav {
       display: inline-block;
       position: absolute;
       top: 0;left: 0;bottom: 0;
-      width: 50px;
+      width: 3.75rem;
       background: rgb(195,176,169);
       transition: all 0.3s ease;
     }
 
     & .nav:hover {
-      width: 150px;
+      width: 9.375rem;
     }
 
     & .nav:before {
@@ -112,18 +90,15 @@
 
     & .nav nav {
       height: 100%;
-      overflow-y: hidden;
-
     }
 
     & .nav nav::-webkit-scrollbar {
-      width:10px;
+      width: 0.625rem;
       background: inherit;
     }
 
     & .nav nav::-webkit-scrollbar-thumb {
-      width: 10px;
-      height: 20px;
+      width: 0.625rem;
       background: rgb(166,151,148);
     }
 
@@ -151,22 +126,23 @@
     & ul {
       list-style: none;
       padding: 0;
+      margin-bottom: 0.625rem;
     }
 
     & a {
       color: white;
-      padding-right: 5px;
+      padding-right: 0.3125rem;
       text-decoration: none;
       transition: all 0.1s ease-in;
     }
 
     & a:hover{
       background: rgb(90,78,78);
-      padding-left: 10px;
+      padding-left: 0.625rem;
     }
 
     & .blur {
-      filter: blur(3px);
+      filter: blur(0.1875rem);
     }
   }
 
@@ -189,7 +165,7 @@
 
     & .nav ul li {
       position: relative;
-      width: 100%; height: 150px;
+      width: 100%; height: 9.375rem;
       list-style: none;
     }
 
@@ -255,9 +231,9 @@
       display: block;
       position: relative;
       top: 40%;left: 50%;
-      width: 20px; height: 20px;
+      width: 1.25rem; height: 1.25rem;
       background: #4c2c31;
-      border-radius: 10px;
+      border-radius: 0.625rem;
       transform: translateX(-50%);
     }
 
@@ -274,7 +250,7 @@
       left: 120%;top:30%;
       width: 200%;height: 30%;
       line-height: 30%;
-      padding-top: 20px;
+      padding-top: 1.25rem;
       text-align: center;
       background: #4c2c31;
       color: white;
@@ -290,12 +266,11 @@
       display: block;
 
       overflow: hidden;
-      width: 0px;
-      height: 0px;
-      border: 15px solid white;
+      width: 0;  height: 0;
+      border: 0.9375rem solid white;
       border-color: white #4c2c31;
-      border-width: 15px 15px 15px 0;
-      left: -15px;
+      border-width: 0.9375rem 0.9375rem 0.9375rem 0;
+      left: -0.9375rem;
       top: 15%;
     }
 
@@ -309,7 +284,7 @@
 
     & .nav-item:hover .tooltip{
       opacity: 1;
-      transform: translateX(20px);
+      transform: translateX(1.25rem);
     }
 
   }
@@ -337,8 +312,8 @@
 
     .nav-container {
       position: relative;
-      top: 100px;
-      padding: 20px 50px;
+      top: 6.25rem;
+      padding: 1.25rem 3.125rem;
       background: #dce4e9;
     }
 
@@ -351,18 +326,17 @@
     .nav-subtitle {
       color: grey;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem;
     }
 
     .nav-element {
       cursor: pointer;
-      /*margin-bottom: 10px;*/
     }
 
     .element-cell {
       padding:0;
       position: relative;
-      height: 100px;
+      height: 6.25rem;
       transition: all 0.3s ease;
       z-index: 2;
     }
@@ -418,7 +392,7 @@
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      padding: 0 30px;
+      padding: 0 1.875rem;
     }
 
     .element-detail {
@@ -452,7 +426,7 @@
       display: inline-block;
       word-wrap: break-word;
       text-align: center;
-      width: 5px;
+      width: 0.3125rem;
       padding: 30% 10% 0 10%;
       margin: 0 20%;
     }
@@ -473,11 +447,11 @@
     .detail-content > section {
       display: block;
       background: inherit;
-      padding: 0 50px;
+      padding: 0 3.125rem;
     }
 
     .detail-content h5 {
-      margin: 20px auto;
+      margin: 1.25rem auto;
       font-size: 160%;
       font-weight: bold;
       color: white;
@@ -493,7 +467,7 @@
     }
 
     .nav-element:hover .element-cell {
-      transform: translateX(-60px);
+      transform: translateX(-3.75rem);
     }
 
     .nav-element:hover .element-detail{
@@ -524,7 +498,7 @@
       display: block;
       position: relative;
       top: 0;left: 0; right: 0;
-      padding: 40px 0; margin: 0;
+      padding: 2.5rem 0; margin: 0;
       background: rgb(112,161,168);
       transition: all 1s ease;
     }
@@ -540,12 +514,12 @@
     & ul {
       display: inline-block;
       list-style: none;
-      padding-left: 100px;
+      padding-left: 6.25rem;
     }
 
     & li {
       display: inline-block;
-      margin: 0 10px;
+      margin: 0 0.625rem;
     }
 
     & a {
@@ -556,13 +530,13 @@
 
     & .des {
       position: absolute;
-      right: 20px;
+      right: 1.25rem;
       transition: all 1s ease;
     }
 
     & .bagger {
       position: absolute;
-      right: 20px;
+      right: 1.25rem;
       opacity: 0;
       transition: all 1s ease;
     }
